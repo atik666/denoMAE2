@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  18 FEB 2025 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  19 FEB 2025 10:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -436,25 +436,6 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count321
 \@lastruleclass=\count322
 \@thisrulewidth=\dimen273
-) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
- (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-
-Package caption Warning: Unknown document class (or package),
-(caption)                standard defaults will be used.
-See the caption package documentation for explanation.
-
-\c@caption@flags=\count323
-\c@continuedfloat=\count324
-Package caption Info: hyperref package is loaded.
-)
-LaTeX Info: Redefining \subref on input line 189.
-Package subcaption Info: The counter `subfigure' was already defined by
-(subcaption)             \newsubfloat (offered by the subfig package) on input line 238.
-Package subcaption Info: The counter `subtable' was already defined by
-(subcaption)             \newsubfloat (offered by the subfig package) on input line 238.
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/newfloat\newfloat.sty
@@ -465,24 +446,24 @@ Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAut
 Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@chapter [{#1}]{#2}.
 Package newfloat Info: \algocf@original@chapter = undefined.
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count325
+\lst@mode=\count323
 \lst@gtempboxa=\box58
 \lst@token=\toks29
-\lst@length=\count326
+\lst@length=\count324
 \lst@currlwidth=\dimen274
-\lst@column=\count327
-\lst@pos=\count328
+\lst@column=\count325
+\lst@pos=\count326
 \lst@lostspace=\dimen275
 \lst@width=\dimen276
-\lst@newlines=\count329
-\lst@lineno=\count330
+\lst@newlines=\count327
+\lst@lineno=\count328
 \lst@maxwidth=\dimen277
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count331
-\lst@skipnumbers=\count332
+\c@lstnumber=\count329
+\lst@skipnumbers=\count330
 \lst@framebox=\box59
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
@@ -497,7 +478,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks30
 \XKV@tempa@toks=\toks31
 )
-\XKV@depth=\count333
+\XKV@depth=\count331
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks32
@@ -529,14 +510,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen289
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count334
-\c@pgf@countb=\count335
-\c@pgf@countc=\count336
-\c@pgf@countd=\count337
+\c@pgf@counta=\count332
+\c@pgf@countb=\count333
+\c@pgf@countc=\count334
+\c@pgf@countd=\count335
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count338
+\pgf@sys@id@count=\count336
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -547,21 +528,21 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count339
-\pgfsyssoftpath@bigbuffer@items=\count340
+\pgfsyssoftpath@smallbuffer@items=\count337
+\pgfsyssoftpath@bigbuffer@items=\count338
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen290
-\pgfmath@count=\count341
+\pgfmath@count=\count339
 \pgfmath@box=\box61
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count342
+\c@pgfmathroundto@lastzeros=\count340
 )) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen291
@@ -591,7 +572,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box62
 \pgf@hbox=\box63
 \pgf@layerbox@main=\box64
-\pgf@picture@serial@count=\count343
+\pgf@picture@serial@count=\count341
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen309
@@ -612,11 +593,12 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen314
-\pgf@sys@shading@range@num=\count344
-\pgf@shadingcount=\count345
+\pgf@sys@shading@range@num=\count342
+\pgf@shadingcount=\count343
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+)
+(C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box65
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
@@ -648,7 +630,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count346
+\pgf@plot@mark@count=\count344
 \pgfplotmarksize=\dimen319
 )
 \tikz@lastx=\dimen320
@@ -663,59 +645,54 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box68
 \tikz@tempbox=\box69
 \tikz@tempbox@bg=\box70
-\tikztreelevel=\count347
-\tikznumberofchildren=\count348
-\tikznumberofcurrentchild=\count349
-\tikz@fig@count=\count350
+\tikztreelevel=\count345
+\tikznumberofchildren=\count346
+\tikznumberofcurrentchild=\count347
+\tikz@fig@count=\count348
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count351
-\pgfmatrixcurrentcolumn=\count352
-\pgf@matrix@numberofcolumns=\count353
+\pgfmatrixcurrentrow=\count349
+\pgfmatrixcurrentcolumn=\count350
+\pgf@matrix@numberofcolumns=\count351
 )
-\tikz@expandcount=\count354
+\tikz@expandcount=\count352
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count355
-\calc@Bcount=\count356
+\calc@Acount=\count353
+\calc@Bcount=\count354
 \calc@Adimen=\dimen328
 \calc@Bdimen=\dimen329
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count357
+\calc@Ccount=\count355
 \calc@Cskip=\skip69
 )
-\c@@todonotes@numberoftodonotes=\count358
+\c@@todonotes@numberoftodonotes=\count356
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count359
+\c@float@type=\count357
 \float@exts=\toks44
 \float@box=\box71
 \@float@everytoks=\toks45
 \@floatcapt=\box72
 )
 \@float@every@algorithm=\toks46
-\c@algorithm=\count360
+\c@algorithm=\count358
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count361
+\l__color_backend_stack_int=\count359
 \l__pdf_internal_box=\box73
-)
-
-LaTeX Warning: Unused global option(s):
-    [lettersize].
-
-(bare_jrnl_new_sample4.aux
+) (bare_jrnl_new_sample4.aux
 
 LaTeX Warning: Label `fig:denomae2' multiply defined.
 
@@ -744,21 +721,19 @@ LaTeX Font Info:    ... okay on input line 54.
 -- Lines per column: 54 (approximate, difference = 2.43001pt).
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: float package is loaded.
-Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count362
+\scratchcounter=\count360
 \scratchdimen=\dimen330
 \scratchbox=\box74
-\nofMPsegments=\count363
-\nofMParguments=\count364
+\nofMPsegments=\count361
+\nofMParguments=\count362
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count365
+\MPscratchCnt=\count363
 \MPscratchDim=\dimen331
-\MPnumerator=\count366
-\makeMPintoPDFobject=\count367
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
 \everyMPtoPDFconversion=\toks48
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -807,7 +782,7 @@ Package hyperref Info: Link coloring ON on input line 54.
 
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
-\c@lstlisting=\count368
+\c@lstlisting=\count366
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 54.
@@ -853,7 +828,12 @@ LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <9> not available
 
 
 
-[2 <./images/flow.png>]
+[2
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.43 
+      <./images/flow.png>]
 Underfull \hbox (badness 2181) in paragraph at lines 48--49
 []\OT1/ptm/m/n/10 The re-con-struc-tion ob-jec-tive $\OMS/cmsy/m/n/10 L[]$ \OT1/ptm/m/n/10 em-ploys mean
  []
@@ -878,56 +858,132 @@ File: images/recon.png Graphic file (type png)
 <use images/recon.png>
 Package pdftex.def Info: images/recon.png  used on input line 17.
 (pdftex.def)             Requested size: 328.82707pt x 268.70035pt.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 45.
+<images/denoMAE_no_mask.png, id=202, 722.7pt x 722.7pt>
+File: images/denoMAE_no_mask.png Graphic file (type png)
+<use images/denoMAE_no_mask.png>
+Package pdftex.def Info: images/denoMAE_no_mask.png  used on input line 49.
+(pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 49.
+ (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+<images/denoMAE2_no_mask.png, id=204, 722.7pt x 722.7pt>
+File: images/denoMAE2_no_mask.png Graphic file (type png)
+<use images/denoMAE2_no_mask.png>
+Package pdftex.def Info: images/denoMAE2_no_mask.png  used on input line 53.
+(pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
+<images/denoMAE_mask.png, id=206, 722.7pt x 722.7pt>
+File: images/denoMAE_mask.png Graphic file (type png)
+<use images/denoMAE_mask.png>
+Package pdftex.def Info: images/denoMAE_mask.png  used on input line 57.
+(pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
+<images/denoMAE2_mask.png, id=208, 722.7pt x 722.7pt>
+File: images/denoMAE2_mask.png Graphic file (type png)
+<use images/denoMAE2_mask.png>
+Package pdftex.def Info: images/denoMAE2_mask.png  used on input line 61.
+(pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 71.
 
 
-<images/finetune_epoch.png, id=203, 505.28775pt x 331.35796pt>
+<images/finetune_epoch.png, id=211, 505.28775pt x 331.35796pt>
 File: images/finetune_epoch.png Graphic file (type png)
 <use images/finetune_epoch.png>
-Package pdftex.def Info: images/finetune_epoch.png  used on input line 74.
+Package pdftex.def Info: images/finetune_epoch.png  used on input line 100.
 (pdftex.def)             Requested size: 205.98834pt x 135.08405pt.
 
 
-[4 <./images/recon.png>]
-<images/SNR_Accuracy_Plot.png, id=215, 632.6034pt x 388.8126pt>
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.106 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.106 
+       <./images/recon.png>]
+
+<images/SNR_Accuracy_Plot.png, id=223, 632.6034pt x 388.8126pt>
 File: images/SNR_Accuracy_Plot.png Graphic file (type png)
 <use images/SNR_Accuracy_Plot.png>
-Package pdftex.def Info: images/SNR_Accuracy_Plot.png  used on input line 89.
+Package pdftex.def Info: images/SNR_Accuracy_Plot.png  used on input line 115.
 (pdftex.def)             Requested size: 228.8775pt x 140.67249pt.
-
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 101.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 127.
 (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-[5 <./images/finetune_epoch.png> <./images/SNR_Accuracy_Plot.png>]
-<images/trans.png, id=226, 578.16pt x 361.35pt>
+[5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.128 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.128 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.128 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.128 
+       <./images/finetune_epoch.png> <./images/SNR_Accuracy_Plot.png> <./images/denoMAE_no_mask.png> <./images/denoMAE2_no_mask.png> <./images/denoMAE_mask.png> <./images/denoMAE2_mask.png>]
+<images/trans.png, id=246, 578.16pt x 361.35pt>
 File: images/trans.png Graphic file (type png)
 <use images/trans.png>
-Package pdftex.def Info: images/trans.png  used on input line 111.
+Package pdftex.def Info: images/trans.png  used on input line 137.
 (pdftex.def)             Requested size: 228.8775pt x 143.04872pt.
 ) (chapters/ablation.tex
 
 
 
-[6 <./images/trans.png>]) (chapters/conclusion.tex) (bare_jrnl_new_sample4.bbl (bare_jrnl_new_sample4.brf)
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46 
+      <./images/trans.png>]) (chapters/conclusion.tex)
+
+(bare_jrnl_new_sample4.bbl (bare_jrnl_new_sample4.brf)
 \tf@brf=\write5
 \openout5 = `bare_jrnl_new_sample4.brf'.
 
 )
 
-
-
 [7
-
-] (chapters/appendix.tex
-<images/cons.png, id=247, 789.276pt x 939.291pt>
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.86 \clearpage
+               
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.86 \clearpage
+               
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.86 \clearpage
+               ] (chapters/appendix.tex
+<images/cons.png, id=269, 789.276pt x 939.291pt>
 File: images/cons.png Graphic file (type png)
 <use images/cons.png>
 Package pdftex.def Info: images/cons.png  used on input line 5.
 (pdftex.def)             Requested size: 375.80544pt x 447.2428pt.
-<images/radio.png, id=248, 932.283pt x 1003.677pt>
+<images/radio.png, id=270, 932.283pt x 1003.677pt>
 File: images/radio.png Graphic file (type png)
 <use images/radio.png>
 Package pdftex.def Info: images/radio.png  used on input line 12.
@@ -939,7 +995,17 @@ Package pdftex.def Info: images/radio.png  used on input line 12.
 [8
 
 
- <./images/cons.png>] [9 <./images/radio.png>] (bare_jrnl_new_sample4.aux)
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.89 \end{document}
+                    <./images/cons.png>] [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.89 \end{document}
+                    <./images/radio.png>] (bare_jrnl_new_sample4.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
@@ -952,22 +1018,22 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `bare_jrnl_new_sample4.out' has not changed.
-(rerunfilecheck)             Checksum: A0A5158AB55CB3DDF6576C85506E7918;5473.
+(rerunfilecheck)             Checksum: EA8EB4D371418B64726ED3047C7FEB38;5472.
 Package rerunfilecheck Info: File `bare_jrnl_new_sample4.brf' has not changed.
-(rerunfilecheck)             Checksum: 78FDFD5EE738A6DFA97D3E967BBECE87;203.
+(rerunfilecheck)             Checksum: 652B30560ADA0354C0C3635CF904A8E9;203.
  ) 
 Here is how much of TeX's memory you used:
- 26897 strings out of 473536
- 496163 string characters out of 5713988
- 1260924 words of memory out of 5000000
- 49535 multiletter control sequences out of 15000+600000
- 600206 words of font info for 118 fonts, out of 8000000 for 9000
+ 26458 strings out of 473536
+ 487905 string characters out of 5713988
+ 1249687 words of memory out of 5000000
+ 49090 multiletter control sequences out of 15000+600000
+ 603690 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,101p,1508b,1760s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_new_sample4.pdf (9 pages, 29591097 bytes).
+ 99i,10n,101p,1508b,1756s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on bare_jrnl_new_sample4.pdf (9 pages, 32669542 bytes).
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 340 words of extra memory for PDF output out of 10000 (max. 10000000)
 

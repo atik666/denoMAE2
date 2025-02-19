@@ -42,6 +42,32 @@ The denoising effectiveness of DenoMAE2.0 is evident in the reconstructed conste
 
 \section{Visualization with TSNE}
 
+\begin{figure*} 
+    \centering
+    \subfloat[a\label{1a}]{%
+       \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
+       width=0.25\linewidth]{images/denoMAE_no_mask.png}}
+    \hfill
+    \subfloat[b\label{1b}]{%
+        \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
+        width=0.25\linewidth]{images/denoMAE2_no_mask.png}}
+    \hfill
+    \subfloat[c\label{1c}]{%
+        \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
+        width=0.25\linewidth]{images/denoMAE_mask.png}}
+    \hfill
+    \subfloat[d\label{1d}]{%
+        \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
+        width=0.25\linewidth]{images/denoMAE2_mask.png}}
+    \caption{(a), (b) Some examples from CIFAR-10. The objects in     
+        single-label images are usually roughly aligned.(c),(d) However, the 
+        assumption of object alignment is not valid for multi-label
+        images. Also note the partial visibility and occlusion
+        between objects in the multi-label images.}
+    \label{tsne} 
+\end{figure*}
+
+
 \todo[inline]{put tsne here}
 
 \subsection{Finetuning Accuracy}
