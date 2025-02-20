@@ -8,6 +8,7 @@ We conducted experiments to evaluate the contribution of different loss componen
 
 \begin{table}[htbp]
     \centering
+    \caption{Effect of loss}
     \begin{tabular}{ccc}
         \toprule
         Reconstruction Loss & Classification Loss & Accuracy (\%) \\
@@ -17,7 +18,6 @@ We conducted experiments to evaluate the contribution of different loss componen
         \ding{51} & \ding{51} & 82.40 \\
         \bottomrule
     \end{tabular}
-    \caption{Effect of loss}
     \label{tab:loss}
 \end{table}
 
@@ -27,6 +27,7 @@ We conducted experiments to analyze the impact of auxiliary loss weights on mode
 
 \begin{table}[htbp]
     \centering
+    \caption{Accuracy results for different weight values}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{ccccccc}
         \toprule
@@ -36,7 +37,6 @@ We conducted experiments to analyze the impact of auxiliary loss weights on mode
         \bottomrule
     \end{tabular}%
     }
-    \caption{Accuracy results for different weight values}
     \label{tab:weights_accuracy}
 \end{table}
 
@@ -46,6 +46,7 @@ We examined the impact of varying MLP hidden dimensions on model performance, wi
 
 \begin{table}[htbp]
     \centering
+    \caption{Accuracy results for different MLP sizes}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{ccccccc}
         \toprule
@@ -55,7 +56,6 @@ We examined the impact of varying MLP hidden dimensions on model performance, wi
         \bottomrule
     \end{tabular}%
     }
-    \caption{Accuracy results for different MLP sizes}
     \label{tab:mlp_accuracy}
 \end{table}
 
@@ -65,6 +65,7 @@ We investigated the impact of varying the number of decoders on model performanc
 
 \begin{table}[htbp]
     \centering
+    \caption{Accuracy results for different decoder sizes}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{ccccccc}
         \toprule
@@ -74,6 +75,5 @@ We investigated the impact of varying the number of decoders on model performanc
         \bottomrule
     \end{tabular}
     }
-    \caption{Accuracy results for different decoder sizes}
     \label{tab:decoder_accuracy}
 \end{table}

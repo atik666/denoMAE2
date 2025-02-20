@@ -411,6 +411,7 @@ INPUT .\images\recon.png
 INPUT .\images\recon.png
 INPUT .\images\recon.png
 INPUT .\images\recon.png
+INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmrc7t.tfm
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
@@ -425,7 +426,6 @@ INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\s
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmrc7t.tfm
 INPUT .\images\denoMAE_no_mask.png
 INPUT .\images\denoMAE_no_mask.png
 INPUT .\images\denoMAE_no_mask.png
@@ -433,10 +433,6 @@ INPUT .\images\denoMAE_no_mask.png
 INPUT .\images\denoMAE_no_mask.png
 INPUT .\images\denoMAE_no_mask.png
 INPUT .\images\denoMAE_no_mask.png
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1phv.fd
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1phv.fd
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1phv.fd
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr7t.tfm
 INPUT .\images\denoMAE2_no_mask.png
 INPUT .\images\denoMAE2_no_mask.png
 INPUT .\images\denoMAE2_no_mask.png
@@ -478,8 +474,6 @@ INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr7t.vf
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\images\trans.png
@@ -562,8 +556,6 @@ INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucr
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrro8a.pfb
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrro8a.pfb
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
-INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\atik666\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb

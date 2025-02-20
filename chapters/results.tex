@@ -23,6 +23,7 @@ The denoising effectiveness of DenoMAE2.0 is evident in the reconstructed conste
 
 \begin{table}[htbp]
     \centering
+    \caption{Comparison of SSIM and PSNR for DenoMAE and DenoMAE2.0}
     \renewcommand{\arraystretch}{1.2}
     \begin{tabular}{|c|c|c|c|}
         \hline
@@ -36,7 +37,6 @@ The denoising effectiveness of DenoMAE2.0 is evident in the reconstructed conste
         & Image2 & 42.0005 & 42.1061 \\ 
         & Image3 & 40.3067 & 40.7508 \\ \hline
     \end{tabular}
-    \caption{Comparison of SSIM and PSNR for DenoMAE and DenoMAE2.0}
     \label{tab:ssim_psnr_comparison}
 \end{table}
 
@@ -44,26 +44,22 @@ The denoising effectiveness of DenoMAE2.0 is evident in the reconstructed conste
 
 \begin{figure*} 
     \centering
-    \subfloat[a\label{1a}]{%
+    \subfloat{%
        \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
        width=0.25\linewidth]{images/denoMAE_no_mask.png}}
     \hfill
-    \subfloat[b\label{1b}]{%
+    \subfloat{%
         \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
         width=0.25\linewidth]{images/denoMAE2_no_mask.png}}
     \hfill
-    \subfloat[c\label{1c}]{%
+    \subfloat{%
         \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
         width=0.25\linewidth]{images/denoMAE_mask.png}}
     \hfill
-    \subfloat[d\label{1d}]{%
+    \subfloat{%
         \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
         width=0.25\linewidth]{images/denoMAE2_mask.png}}
-    \caption{(a), (b) Some examples from CIFAR-10. The objects in     
-        single-label images are usually roughly aligned.(c),(d) However, the 
-        assumption of object alignment is not valid for multi-label
-        images. Also note the partial visibility and occlusion
-        between objects in the multi-label images.}
+    \caption{Latent representation visualization using t-SNE. From left to right: (1) DenoMAE without masking, (2) DenoMAE2.0 without masking, (3) DenoMAE with 0.75\% masking, and (4) DenoMAE2.0 with 0.75\% masking.}
     \label{tsne} 
 \end{figure*}
 
@@ -76,6 +72,7 @@ We compare DenoMAE2.0 with many of the state-of-the-art models to showcase its p
 
 \begin{table}[htbp]
     \centering
+    \caption{Downstream accuracy.}
     \resizebox{0.8\linewidth}{!}{%
     \begin{tabular}{|c|c|}
         \hline
@@ -89,7 +86,6 @@ We compare DenoMAE2.0 with many of the state-of-the-art models to showcase its p
         DenoMAE2.0 &  \textbf{82.40} \\ \hline
     \end{tabular}%
     }
-    \caption{Downstream accuracy.}
     \label{tab:example}
 \end{table}
 

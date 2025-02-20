@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  19 FEB 2025 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  19 FEB 2025 16:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -863,10 +863,6 @@ File: images/denoMAE_no_mask.png Graphic file (type png)
 <use images/denoMAE_no_mask.png>
 Package pdftex.def Info: images/denoMAE_no_mask.png  used on input line 49.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 49.
- (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
-File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-)
 <images/denoMAE2_no_mask.png, id=204, 722.7pt x 722.7pt>
 File: images/denoMAE2_no_mask.png Graphic file (type png)
 <use images/denoMAE2_no_mask.png>
@@ -882,13 +878,13 @@ File: images/denoMAE2_mask.png Graphic file (type png)
 <use images/denoMAE2_mask.png>
 Package pdftex.def Info: images/denoMAE2_mask.png  used on input line 61.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 71.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 67.
 
 
 <images/finetune_epoch.png, id=211, 505.28775pt x 331.35796pt>
 File: images/finetune_epoch.png Graphic file (type png)
 <use images/finetune_epoch.png>
-Package pdftex.def Info: images/finetune_epoch.png  used on input line 100.
+Package pdftex.def Info: images/finetune_epoch.png  used on input line 96.
 (pdftex.def)             Requested size: 205.98834pt x 135.08405pt.
 
 
@@ -896,20 +892,20 @@ Package pdftex.def Info: images/finetune_epoch.png  used on input line 100.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.106 
+l.102 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.106 
+l.102 
        <./images/recon.png>]
 
 <images/SNR_Accuracy_Plot.png, id=223, 632.6034pt x 388.8126pt>
 File: images/SNR_Accuracy_Plot.png Graphic file (type png)
 <use images/SNR_Accuracy_Plot.png>
-Package pdftex.def Info: images/SNR_Accuracy_Plot.png  used on input line 115.
+Package pdftex.def Info: images/SNR_Accuracy_Plot.png  used on input line 111.
 (pdftex.def)             Requested size: 228.8775pt x 140.67249pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 127.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 123.
 (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
@@ -918,27 +914,27 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.128 
+l.124 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.128 
+l.124 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.128 
+l.124 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.128 
+l.124 
        <./images/finetune_epoch.png> <./images/SNR_Accuracy_Plot.png> <./images/denoMAE_no_mask.png> <./images/denoMAE2_no_mask.png> <./images/denoMAE_mask.png> <./images/denoMAE2_mask.png>]
-<images/trans.png, id=246, 578.16pt x 361.35pt>
+<images/trans.png, id=245, 578.16pt x 361.35pt>
 File: images/trans.png Graphic file (type png)
 <use images/trans.png>
-Package pdftex.def Info: images/trans.png  used on input line 137.
+Package pdftex.def Info: images/trans.png  used on input line 133.
 (pdftex.def)             Requested size: 228.8775pt x 143.04872pt.
 ) (chapters/ablation.tex
 
@@ -978,12 +974,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has 
                                                   \__shipout_drop_firstpage_...
 l.86 \clearpage
                ] (chapters/appendix.tex
-<images/cons.png, id=269, 789.276pt x 939.291pt>
+<images/cons.png, id=268, 789.276pt x 939.291pt>
 File: images/cons.png Graphic file (type png)
 <use images/cons.png>
 Package pdftex.def Info: images/cons.png  used on input line 5.
 (pdftex.def)             Requested size: 375.80544pt x 447.2428pt.
-<images/radio.png, id=270, 932.283pt x 1003.677pt>
+<images/radio.png, id=269, 932.283pt x 1003.677pt>
 File: images/radio.png Graphic file (type png)
 <use images/radio.png>
 Package pdftex.def Info: images/radio.png  used on input line 12.
@@ -1023,17 +1019,17 @@ Package rerunfilecheck Info: File `bare_jrnl_new_sample4.brf' has not changed.
 (rerunfilecheck)             Checksum: 652B30560ADA0354C0C3635CF904A8E9;203.
  ) 
 Here is how much of TeX's memory you used:
- 26458 strings out of 473536
- 487905 string characters out of 5713988
+ 26394 strings out of 473536
+ 487060 string characters out of 5713988
  1249687 words of memory out of 5000000
- 49090 multiletter control sequences out of 15000+600000
- 603690 words of font info for 122 fonts, out of 8000000 for 9000
+ 49031 multiletter control sequences out of 15000+600000
+ 601930 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,10n,101p,1508b,1756s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_new_sample4.pdf (9 pages, 32669542 bytes).
+<C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on bare_jrnl_new_sample4.pdf (9 pages, 32664808 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
+ 379 PDF objects out of 1000 (max. 8388607)
  94 named destinations out of 1000 (max. 500000)
  340 words of extra memory for PDF output out of 10000 (max. 10000000)
 
