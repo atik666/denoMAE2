@@ -40,9 +40,15 @@ The denoising effectiveness of DenoMAE2.0 is evident in the reconstructed conste
     \label{tab:ssim_psnr_comparison}
 \end{table}
 
-\section{Visualization with TSNE}
+\subsection{Visualization with TSNE}
 
-\begin{figure*} 
+In Figure \ref{fig:tsne}, we visualize the latent representations of DenoMAE and DenoMAE2.0 using t-distributed stochastic neighbor embedding (t-SNE). The plots (left two) reveal that DenoMAE2.0 produces more accurate and distinct clusters than DenoMAE, indicating superior feature separation and representation learning. Specifically, in DenoMAE, classes 0, 3, and 9 contain more separated clusters within the same class. In contrast, DenoMAE2.0 exhibits more distinct clusters for these classes.
+
+This enhanced clustering is particularly evident in the masked samples (right two plots), where we mask out a significant portion (75\%) of the images. Masking typically makes distinct cluster formation more challenging. However, DenoMAE2.0 achieves clearer boundaries between classes, suggesting improved robustness and generalization capabilities. In DenoMAE, classes 0, 3, and 9 achieve somewhat distinct clusters, with a few samples overlapping in other clusters. In DenoMAE2.0, classes 0, 3, 6, 7, 8, and 9 show better-separated clusters, indicating enhanced feature learning and representation.
+
+However, in all the plots, classes 1 and 2 entirely overlap with each other, indicating that the model struggles to distinguish between these two classes. This is a common issue in modulation classification, as some classes are very similar to each other.
+
+\begin{figure*}
     \centering
     \subfloat{%
        \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
@@ -60,15 +66,21 @@ The denoising effectiveness of DenoMAE2.0 is evident in the reconstructed conste
         \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
         width=0.25\linewidth]{images/denoMAE2_mask.png}}
     \caption{Latent representation visualization using t-SNE. From left to right: (1) DenoMAE without masking, (2) DenoMAE2.0 without masking, (3) DenoMAE with 0.75\% masking, and (4) DenoMAE2.0 with 0.75\% masking.}
-    \label{tsne} 
+    \label{fig:tsne} 
 \end{figure*}
-
-
-\todo[inline]{put tsne here}
 
 \subsection{Finetuning Accuracy}
 
-We compare DenoMAE2.0 with many of the state-of-the-art models to showcase its performance. As shown in Table \ref{tab:example}, DenoMAE2.0 achieves the highest test accuracy of 82.40\% among all compared methods. This represents a significant improvement over the baseline ViT (79.90\%) and other state-of-the-art approaches including DEiT (81.20\%), MoCov3 (81.00\%), BEiT (80.40\%), MAE (80.10\%), and the original DenoMAE (81.30\%). The consistent performance advantage demonstrates the effectiveness of our enhanced denoising strategy for effective representation learning during pretraining.
+We compare DenoMAE2.0 with many of the state-of-the-art models to showcase its performance. As shown in Table \ref{tab:example}, DenoMAE2.0 achieves the highest test accuracy of 82.40\% among all compared methods. This represents a significant improvement over the baseline ViT (79.90\%) and other state-of-the-art approaches including DEiT (81.20\%), MoCov3 (81.00\%), BEiT (80.40\%), MAE (80.10\%), and the original DenoMAE (81.30\%). The consistent performance advantage demonstrates the effectiveness of our enhanced denoising strategy for effective representation learning during pretraining. 
+
+Figure \ref{fig:confusion} presents a confusion matrix visualizing the per-class performance of DenoMAE2.0. The diagonal elements indicate correct classifications, while off-diagonal elements show misclassifications. The matrix reveals strong performance across most classes, though notable confusion exists between classes 1 and 2, aligning with observations from the t-SNE analysis. This confusion pattern suggests inherent similarities in the signal characteristics of these two modulation types that challenge even our enhanced model architecture.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\linewidth]{images/cm.png}
+    \caption{Confusion matrix}
+    \label{fig:confusion}
+\end{figure}
 
 \begin{table}[htbp]
     \centering
@@ -110,7 +122,7 @@ The SNR performance plot demonstrates robust classification accuracy across vari
     \centering
     \includegraphics[width=\linewidth]{images/SNR_Accuracy_Plot.png}
     \caption{SNR}
-    \label{fig:denomae2}
+    \label{fig:snr_acc}
 \end{figure}
 
 
