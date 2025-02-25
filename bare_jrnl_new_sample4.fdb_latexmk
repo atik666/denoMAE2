@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex bare_jrnl_new_sample4"] 1740455667.16193 "bare_jrnl_new_sample4.aux" "bare_jrnl_new_sample4.bbl" "bare_jrnl_new_sample4" 1740455753.36068 0
+["bibtex bare_jrnl_new_sample4"] 1740490346.76761 "bare_jrnl_new_sample4.aux" "bare_jrnl_new_sample4.bbl" "bare_jrnl_new_sample4" 1740490424.4809 0
   "./references.bib" 1740454279 19010 06a4979945c3bc06c0add9d7926fdb35 ""
   "C:/Users/atik666/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "bare_jrnl_new_sample4.aux" 1740455752 11831 3eeb13a6a9617e147f80112ecd0adf5c "pdflatex"
+  "bare_jrnl_new_sample4.aux" 1740490423 11831 0d4cda2d5d48a9d532c881323d1b3edd "pdflatex"
   (generated)
   "bare_jrnl_new_sample4.bbl"
   "bare_jrnl_new_sample4.blg"
   (rewritten before read)
-["pdflatex"] 1740455744.06746 "d:/OneDrive - Rowan University/RA/Spring 25/DenoMAE2.0/DenoMAE2/bare_jrnl_new_sample4.tex" "bare_jrnl_new_sample4.pdf" "bare_jrnl_new_sample4" 1740455753.36103 0
+["pdflatex"] 1740490415.46764 "d:/OneDrive - Rowan University/RA/Spring 25/DenoMAE2.0/DenoMAE2/bare_jrnl_new_sample4.tex" "bare_jrnl_new_sample4.pdf" "bare_jrnl_new_sample4" 1740490424.48129 0
   "C:/Users/atik666/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1740416577 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/atik666/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1737490519 12014361 2b9681ff934868478c1cafb79386af98 ""
   "C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -199,17 +199,17 @@
   "C:/Users/atik666/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/atik666/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "IEEEtran.cls" 1740415883 282108 7379a03af5f3d0dad26db23a43c3a726 ""
-  "bare_jrnl_new_sample4.aux" 1740455752 11831 3eeb13a6a9617e147f80112ecd0adf5c "pdflatex"
-  "bare_jrnl_new_sample4.bbl" 1740455667 13952 3bc885e163ecbd38a690009c3c5fa647 "bibtex bare_jrnl_new_sample4"
-  "bare_jrnl_new_sample4.tex" 1740427271 3187 7356a31e87bd113dba05395ca2b87f7c ""
+  "bare_jrnl_new_sample4.aux" 1740490423 11831 0d4cda2d5d48a9d532c881323d1b3edd "pdflatex"
+  "bare_jrnl_new_sample4.bbl" 1740490347 13952 3bc885e163ecbd38a690009c3c5fa647 "bibtex bare_jrnl_new_sample4"
+  "bare_jrnl_new_sample4.tex" 1740490334 3423 3a2304bdb61c32af5077906878adb43d ""
   "chapters/ablation.tex" 1740455103 6085 56ac0888b4e10b747c083a85dbde8bc0 ""
   "chapters/appendix.tex" 1740455647 4403 996be1e7aaea1c71c68b071ce2f67eb4 ""
   "chapters/conclusion.tex" 1739821957 757 2f8cca036d682464235f97475fc8bc62 ""
-  "chapters/intro.tex" 1740426354 4700 0334e022fb949a303c8824f37bcf82c1 ""
+  "chapters/intro.tex" 1740487694 4750 2c2c5aae860c81392e68b7e034bce1c2 ""
   "chapters/method.tex" 1740455743 6059 7f8c364b3e390bf0f412e5b61a4ecdb1 ""
   "chapters/related.tex" 1740426213 3854 c0cd67ec80f4031afd47e0c918ceefaa ""
-  "chapters/results.tex" 1740455647 15413 eaaadb462ec6fee422768b138621d9f1 ""
-  "d:/OneDrive - Rowan University/RA/Spring 25/DenoMAE2.0/DenoMAE2/bare_jrnl_new_sample4.tex" 1740427271 3187 7356a31e87bd113dba05395ca2b87f7c ""
+  "chapters/results.tex" 1740490415 15381 433640303c72cf56dd8430d1fb775383 ""
+  "d:/OneDrive - Rowan University/RA/Spring 25/DenoMAE2.0/DenoMAE2/bare_jrnl_new_sample4.tex" 1740490334 3423 3a2304bdb61c32af5077906878adb43d ""
   "images/SNR_Accuracy_Plot.png" 1739833808 588573 3b1d5ee9c88c37170e0a2fafa71bd0c5 ""
   "images/cm.png" 1740074890 247740 1db813104b1f438e43c370a2d847427f ""
   "images/cons.png" 1739829874 10736260 1d93db15e91ffc3794b6a914349f7a9e ""
@@ -218,7 +218,7 @@
   "images/denoMAE_mask.png" 1739976664 1088493 06a557e2453cb49e09e1ad6d49de1dd8 ""
   "images/denoMAE_no_mask.png" 1739975515 616362 6cb75867c82ba798537ece5796ef7a95 ""
   "images/finetune_epoch.png" 1739833808 286324 644f411aeaa0e0c4b0192ab4f62c8949 ""
-  "images/flow.png" 1739833808 16140827 188d7bb95dc366cee3b2fe1697bafae8 ""
+  "images/flow_con.png" 1740487586 10603755 47c87949830cbb94d315051908715e21 ""
   "images/radio.png" 1739832397 4770597 a2aa7f3dbd22464fb5db8b80d7e28b92 ""
   "images/recon.png" 1739833808 3180979 08834d244e670807c77a29a0937ff99e ""
   "images/trans.png" 1739833808 320619 472d7b1a7906c103012ad71678e87ac2 ""

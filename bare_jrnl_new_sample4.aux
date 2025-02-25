@@ -37,9 +37,9 @@
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {1}{\ignorespaces DenoMAE2.0, PyTorch-like pseudo code}}{3}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Image Masking and Encoding}{3}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Decoder Architecture and Reconstruction}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Classification Branch}{3}{}\protected@file@percent }
 \citation{doan2020learning}
 \citation{peng2018modulation}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Classification Branch}{4}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Overall Objective}{4}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}Fine-Tuning on Downstream Tasks}{4}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Datasets}{4}{}\protected@file@percent }
@@ -59,11 +59,11 @@
 \@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Downstream classification accuracy for different models}}{6}{}\protected@file@percent }
 \newlabel{tab:example}{{II}{6}{}{table.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Performance on Number of Epochs}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Performance Across Different SNRs}{6}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix for DenoMAE2.0 downstream classification}}{6}{}\protected@file@percent }
 \newlabel{fig:confusion}{{4}{6}{}{figure.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Epoch finetuning.}}{6}{}\protected@file@percent }
 \newlabel{fig:epoch}{{5}{6}{}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Performance Across Different SNRs}{6}{}\protected@file@percent }
 \citation{peng2018modulation}
 \citation{faysal2024nmformer}
 \citation{meng2018automatic}
@@ -73,18 +73,18 @@
 \citation{ccamlibel2024automatic}
 \citation{elyousseph2021deep}
 \citation{cheng2024automatic,jagatheesaperumal2024deep,10014805}
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Comparison of DenoMAE2.0 with other modulation classification methods}}{7}{}\protected@file@percent }
-\newlabel{tab:compare}{{III}{7}{}{table.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Accuracy comparison across different SNRs}}{7}{}\protected@file@percent }
 \newlabel{fig:snr_acc}{{6}{7}{}{figure.6}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {VI}Comparison with Other AMC Methods}{7}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Transferability}{7}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-A}1}RadioML Dataset}{7}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-A}2}Performance}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Ablation Study}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Effect of the Loss Function}{7}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Comparison of DenoMAE2.0 with other modulation classification methods}}{8}{}\protected@file@percent }
+\newlabel{tab:compare}{{III}{8}{}{table.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Transfer learning performance on RadioML dataset}}{8}{}\protected@file@percent }
 \newlabel{fig:trans}{{7}{8}{}{figure.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Ablation Study}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Effect of the Loss Function}{8}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Accuracy for different loss configurations}}{8}{}\protected@file@percent }
 \newlabel{tab:loss}{{IV}{8}{}{table.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Effect of Auxiliary Loss Weights}{8}{}\protected@file@percent }
@@ -114,10 +114,6 @@
 \bibcite{zayat2023transformer}{16}
 \bibcite{faysal2025denomae}{17}
 \bibcite{dobre2007survey}{18}
-\bibcite{o2018over}{19}
-\bibcite{zhang2021efficient}{20}
-\bibcite{doan2020learning}{21}
-\bibcite{hamidi2021mcformer}{22}
 \@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Accuracy results for different MLP hidden dimensions}}{9}{}\protected@file@percent }
 \newlabel{tab:mlp_accuracy}{{VII}{9}{}{table.7}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-E}}Effect of number of decoders}{9}{}\protected@file@percent }
@@ -125,6 +121,10 @@
 \newlabel{tab:decoder_accuracy}{{VIII}{9}{}{table.8}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{9}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{References}{9}{}\protected@file@percent }
+\bibcite{o2018over}{19}
+\bibcite{zhang2021efficient}{20}
+\bibcite{doan2020learning}{21}
+\bibcite{hamidi2021mcformer}{22}
 \bibcite{ya2022large}{23}
 \bibcite{he2020momentumcontrastunsupervisedvisual}{24}
 \bibcite{berthelot2019mixmatch}{25}
