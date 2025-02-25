@@ -1,8 +1,6 @@
 \documentclass[journal]{IEEEtran}
 \usepackage{amsmath,amsfonts}
-\usepackage{algorithmic}
 \usepackage{array}
-\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
 \usepackage{textcomp}
 \usepackage{stfloats}
 \usepackage{url}
@@ -12,7 +10,6 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{xcolor}
 \usepackage{pifont}
-\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
 \usepackage{amssymb}
 \usepackage{tabularx}
 \usepackage{multirow}
@@ -21,20 +18,17 @@
 \usepackage{newfloat}
 \usepackage{listings}
 \usepackage{todonotes}
+\usepackage{amsmath}
 \usepackage{algorithm}
+\usepackage{subcaption}
 \usepackage{algorithmic}
-
-\usepackage[caption=false]{subfig}
-
-\definecolor{pythoncomment}{RGB}{76, 153, 0} % Adjust RGB values as desired
-\definecolor{pythonfunction}{RGB}{200, 0, 0} % Red for function names
-\definecolor{purpleish}{rgb}{0.5, 0.0, 0.5}
-\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
 % \hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
-% updated with editorial comments 8/9/2021
 
 \usepackage[margin=1in]{geometry}
 \usepackage{listings}
+% Change 'Listing' to 'Algorithm'
+\renewcommand{\lstlistingname}{Algorithm}
+
 \usepackage{xcolor}
 
 \lstset{
@@ -70,18 +64,19 @@
 
 \begin{abstract}
 
-We introduce DenoMAE2.0, an enhanced denoising masked autoencoder that integrates a local patch classification objective alongside traditional reconstruction loss to improve representation learning and robustness. Unlike conventional Masked Autoencoders (MAE), which focus solely on reconstructing missing inputs, DenoMAE2.0 introduces position-aware classification of unmasked patches, enabling the model to capture fine-grained local features while maintaining global coherence. This dual-objective approach is particularly beneficial in semi-supervised learning for wireless communication, where high noise levels and data scarcity pose significant challenges. We conduct extensive experiments on modulation signal classification across a wide range of signal-to-noise ratios (SNRs), from extremely low to moderately high conditions and in a low data regime. Our results demonstrate that DenoMAE2.0 surpasses its predecessor, DenoMAE, and other baselines in both denoising quality and downstream classification accuracy. DenoMAE2.0 achieves a 1.1\% improvement on our dataset and a 16.55\% improved accuracy gain on the RadioML benchmark, over DenoMAE, for constellation diagram classification of modulation signals. 
+We introduce DenoMAE2.0, an enhanced denoising masked autoencoder that integrates a local patch classification objective alongside traditional reconstruction loss to improve representation learning and robustness. Unlike conventional Masked Autoencoders (MAE), which focus solely on reconstructing missing inputs, DenoMAE2.0 introduces position-aware classification of unmasked patches, enabling the model to capture fine-grained local features while maintaining global coherence. This dual-objective approach is particularly beneficial in semi-supervised learning for wireless communication, where high noise levels and data scarcity pose significant challenges. We conduct extensive experiments on modulation signal classification across a wide range of signal-to-noise ratios (SNRs), from extremely low to moderately high conditions and in a low data regime. Our results demonstrate that DenoMAE2.0 surpasses its predecessor, DenoMAE, and other baselines in both denoising quality and downstream classification accuracy. DenoMAE2.0 achieves a 1.1\% improvement over DenoMAE on our dataset and 11.83\%, 16.55\% significant improved accuracy gains on the RadioML benchmark, over DenoMAE, for constellation diagram classification of modulation signals. 
 
 \end{abstract}
 
 \input{chapters/intro}
+\input{chapters/related}
 \input{chapters/method}
 \input{chapters/results}
 \input{chapters/ablation}
 \input{chapters/conclusion}
 
-\bibliographystyle{ieeetr}
-\bibliography{ref}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
 
 \clearpage
 \input{chapters/appendix}

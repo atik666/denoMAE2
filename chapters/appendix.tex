@@ -76,8 +76,76 @@ Figure \ref{fig:radio} illustrates the RadioML diagram, which is used to visuali
 
 \section{List of hyperparameter During Pretraining}
 
+\begin{table}[h]
+    \centering
+    \caption{List of hyperparameters during pretraining}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Parameter name} & \textbf{Value} \\ \hline
+        Training batch size & 64 \\ \hline
+        Testing batch size & 10 \\ \hline
+        Image size & 224, 224 \\ \hline
+        Patch size & 16 \\ \hline
+        Mask ratio & 0.75 \\ \hline
+        Encoder embedding dimension & 768 \\ \hline
+        Decoder embedding dimension & 512 \\ \hline
+        Encoder depth & 12 \\ \hline
+        Decoder depth & 8 \\ \hline
+        Encoder number of heads & 12 \\ \hline
+        Decoder number of heads & 8 \\ \hline
+        Number of epochs & 100 \\ \hline
+        Learning rate & 0.0003 \\ \hline
+        Weight decay & 0.05 \\ \hline
+        Classification loss weight & 0.1 \\ \hline
+        Reconstruction loss weight & 1.0 \\ \hline
+    \end{tabular}
+    \label{tab:pre_para}
+\end{table}
+
 \section{List of hyperparameter During Finetuning}
 
+\begin{table}[h]
+    \centering
+    \caption{List of hyperparameters during pretraining}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Parameter name} & \textbf{Value} \\ \hline
+        Training batch size & 32 \\ \hline
+        Testing batch size & 10 \\ \hline
+        Image size & 224, 224 \\ \hline
+        Patch size & 16 \\ \hline
+        Encoder embedding dimension & 768 \\ \hline
+        Encoder depth & 12 \\ \hline
+        Encoder number of heads & 12 \\ \hline
+        Number of epochs & 150 \\ \hline
+        Learning rate & 0.0001 \\ \hline
+        Weight decay & 0.05 \\ \hline
+        Number of classes & 10, 24 \\ \hline
+    \end{tabular}
+    \label{tab:fine_para}
+\end{table}
+
 \section{More Denoising Examples}
+
+\begin{table*}[htbp]
+    \centering
+    \caption{Comparison of DenoMAE2.0 with other modulation classification methods}
+    \label{compare}
+    \begin{tabular}{cccccc}
+    \toprule
+    \multirow{2}{*}{\textbf{Methods}} & \multicolumn{2}{c}{\textbf{Number of samples}} & \multirow{2}{*}{\textbf{SNR dB}} & \multirow{2}{*}{\textbf{Number of classes}} & \multirow{2}{*}{\textbf{Test accuracy (\%)}} \\ 
+    \cmidrule(lr){2-3}
+     & \textbf{Pretraining} & \textbf{Fine-tuning} & & \\ \midrule
+    
+    AlexNet \cite{peng2018modulation}  & 800,000 (train) & 8,000 (test)  & 2 & 8 & 82.8  \\
+    NMformer \cite{faysal2024nmformer} & 106,800 & 3,000 & 0.5 - 4.5 & 10 & 71.6 \\
+    CNN-AMC \cite{meng2018automatic} & 79,200 & 228,060 & -6 & 4 & 50.40 \\
+    DL-GRF \cite{sun2022automatic} &  2,000 (train) & 200 (test) & 0 & 4 & 59 \\
+    DenoMAE \cite{faysal2025denomae} & 10,000 & 1,000 & 0 - 10 & 10 & 81.3 \\
+    DenoMAE2.0 (\textbf{Ours}) & 10,000 & 1,000 & 0 - 10 & 10 & 82.4 \\
+    
+    \bottomrule
+    \end{tabular}
+\end{table*}
 
 \section{Comparison with Other Methods}

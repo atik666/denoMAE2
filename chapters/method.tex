@@ -1,14 +1,12 @@
 \section{Methodology: DenoMAE2.0}
 
-The overall framework of the proposed DenoMAE2.0 is illustrated in Figure \ref{fig:denomae2}. DenoMAE2.0 consists of three components: encoder, reconstruction denoising decoder, and local patch classification head. There are two complementary objectives: the denoising reconstruction objective and the local patch classification classification objective. Details are introduced as follows.
+The overall framework of the proposed DenoMAE2.0 is illustrated in Figure \ref{fig:denomae2}. DenoMAE2.0 consists of three components: encoder, reconstruction denoising decoder, and local patch classification head. There are two complementary objectives: the denoising reconstruction objective and the local patch classification classification objective. Details are provided in Algorithm~\ref{lst:DenoMAE2.0} and introduced as follows.
 
-
-\noindent\textbf{Algorithm 1: DenoMAE2.0: PyTorch-like pseudo code}
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[language=Python, caption={DenoMAE2.0, PyTorch-like pseudo code}, label={lst:DenoMAE2.0}]
 # f_enc , f_dec: encoder , decoder
-# f_mlp: mlp patch classification head
+# f_mlp: patch classification head
 # mask_r: mask ratio
-# lambda_rec, lambda_cls: objective weights
+# \lambda_{rec}, \lambda_{class}: loss function weights
 
 for x, tgt in loader: # load a minibatch
     x = patch_emb(x) # embed patches
@@ -22,7 +20,7 @@ for x, tgt in loader: # load a minibatch
 
 def class_labels(mask_ids):
     classes = ((img_size//patch_size)**2) * (1 - mask_r)
-    labels = classes[mask, where mask == 0]
+    labels = classes[mask, where mask == 0] # 0: visible patches, 1: masked patches
     return labels
 
 def rec_loss(k, x): # reconstruction
@@ -62,8 +60,7 @@ The visible patch features $\mathbf{q}_v$ are additionally leveraged for classif
     N_{\text{classes}} = \left(\frac{\text{img\_size}}{\text{patch\_size}}\right)^2 \cdot (1 - r_{\text{mask}})
 \end{equation}
 
-
-Since we obtain several classes from a single image, the classification branch is a multi-class classification problem. The classification head consists of a two-layer MLP architecture with BatchNorm and ReLU activation between layers. The classification loss $\mathcal{L}_{\text{cls}}$ employs cross-entropy (CE) between predicted and ground truth labels:
+Since we obtain several classes from a single image, the classification branch is a multi-class classification problem. The classification head consists of a simple linear layer that projects the patch features directly to the number of classes. The classification loss $\mathcal{L}_{\text{cls}}$ employs cross-entropy (CE) between predicted and ground truth labels:
 
 \begin{equation}
     \mathcal{L}_{\text{cls}} = \text{CE}(\mathbf{p}, \mathbf{y})
@@ -79,9 +76,8 @@ Our DenoMAE2.0 optimizes a combination of reconstruction and classification loss
     \mathcal{L} = \lambda_{\text{rec}}\mathcal{L}_{\text{rec}} + \lambda_{\text{cls}}\mathcal{L}_{\text{cls}}
 \end{equation}
 
-where $\lambda_{\text{rec}}$ and $\lambda_{\text{cls}}$ are balancing weights for the reconstruction and classification objectives, respectively. Through empirical validation (see Table 5d), we set $\lambda_{\text{rec}} = 1.0$ and $\lambda_{\text{cls}} = 0.1$.
+where $\lambda_{\text{rec}}$ and $\lambda_{\text{cls}}$ are balancing weights for the reconstruction and classification objectives, respectively. Through empirical validation (see Table~\ref{tab:weights_accuracy}), we set $\lambda_{\text{rec}} = 1.0$ and $\lambda_{\text{cls}} = 0.1$.
 
 \subsection{Fine-Tuning on Downstream Tasks}
 
 Following pre-training, the DenoMAE2.0 encoder is fine-tuned on specific recognition tasks to enhance performance. During this stage, the decoder and classification head are excluded, retaining only the encoder. For fine-tuning, the model utilizes the complete set of patches, corresponding to the uncorrupted input images, to optimize for downstream recognition tasks.
-

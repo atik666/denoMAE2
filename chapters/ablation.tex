@@ -27,7 +27,7 @@ We conducted experiments to analyze the impact of auxiliary loss weights on mode
 
 \begin{table}[htbp]
     \centering
-    \caption{Accuracy results for different weight values}
+    \caption{Accuracy results for different weight of auxiliary loss}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{ccccccc}
         \toprule
@@ -40,23 +40,44 @@ We conducted experiments to analyze the impact of auxiliary loss weights on mode
     \label{tab:weights_accuracy}
 \end{table}
 
+\subsection{combination of Losses}
+
+We investigated the effect of different weight combinations between reconstruction and auxiliary losses, as shown in Table~\ref{tab:weights_comb}. The results reveal that balancing these two losses is crucial for optimal performance. Equal weighting (0.5, 0.5) yields suboptimal performance at 78.80\%, while gradually increasing the reconstruction loss weight while decreasing the auxiliary loss weight shows steady improvement. The optimal combination is achieved with reconstruction loss weight of 1.0 and auxiliary loss weight of 0.10, resulting in 82.40\% accuracy. Further increasing the reconstruction loss weight to 1.2 while reducing auxiliary loss weight to 0.05 leads to a slight performance degradation (82.0\%), suggesting that maintaining a proper balance between these losses is essential for optimal model performance.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Accuracy results for different combination of reconstruction and auxiliary loss weights}
+    \label{tab:weights_comb}
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{ccccccc}
+        \toprule
+        Rec. loss Weights & 0.5 & 0.75 & 0.80 & 0.90 & 1.0 & 1.2 \\
+        \midrule
+        Aux. loss weights & 0.5 & 0.25 & 0.10 & 0.10 & 0.10 & 0.05 \\
+        \midrule
+        Accuracy (\%) & 78.80 & 80.50 & 81.60 & 82.0 & 82.40 & 82.0 \\
+        \bottomrule
+    \end{tabular}%
+    }
+\end{table}
+
 \subsection{Effect of Number of MLP Hidden Dimensions}
 
-We examined the impact of varying MLP hidden dimensions on model performance, with results presented in Table~\ref{tab:mlp_accuracy}. The experiments show that increasing the hidden dimensions from 64 to 256 leads to steady improvement in accuracy, reaching the peak performance of 82.40\% at 256 dimensions. However, further increasing the dimensions beyond 256 results in slightly diminished performance due to overfitting in our low data regime, with accuracy gradually decreasing to 82.00\% at 1024 dimensions. This suggests that while sufficient network capacity is important, extremely large hidden dimensions do not provide additional benefits and may lead to unnecessary computational overhead.
+We examined the impact of varying MLP hidden dimensions on model performance, with results presented in Table~\ref{tab:mlp_accuracy}. The experiments demonstrate that model performance improves as the hidden dimension size increases from 256 to 768, reaching peak accuracy at 768 dimensions (82.40\%). Further increases to 1024 maintain this performance level, with a marginal improvement to 82.50\% at 1280 dimensions. This suggests that while larger hidden dimensions can capture more complex features, the benefits plateau around 768-1024 dimensions, indicating this range as the optimal choice for balancing model capacity and computational efficiency.
 
 \begin{table}[htbp]
     \centering
     \caption{Accuracy results for different MLP sizes}
+    \label{tab:mlp_accuracy}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{ccccccc}
         \toprule
-        MLP dimensions & 64 & 128 & 256 & 512 & 768 & 1024 \\
+        MLP dimensions &  256 & 512 & 768 & 1024 & 1280 \\
         \midrule
-        Accuracy (\%) & 81.00 & 81.60 & 82.40 & 82.20 & 82.00 & 82.00 \\
+        Accuracy (\%) & 81.00 & 81.60 & 82.40 & 82.40 & 82.50 \\
         \bottomrule
     \end{tabular}%
     }
-    \label{tab:mlp_accuracy}
 \end{table}
 
 \subsection{Effect of number of decoders}
