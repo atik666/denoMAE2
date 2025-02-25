@@ -8,7 +8,7 @@ We conducted experiments to evaluate the contribution of different loss componen
 
 \begin{table}[htbp]
     \centering
-    \caption{Effect of loss}
+    \caption{Accuracy for different loss configurations}
     \begin{tabular}{ccc}
         \toprule
         Reconstruction Loss & Classification Loss & Accuracy (\%) \\
@@ -21,13 +21,13 @@ We conducted experiments to evaluate the contribution of different loss componen
     \label{tab:loss}
 \end{table}
 
-\subsection{Effect of auxiliary loss weights}
+\subsection{Effect of Auxiliary Loss Weights}
 
 We conducted experiments to analyze the impact of auxiliary loss weights on model performance, as shown in Table~\ref{tab:weights_accuracy}. The results demonstrate that the model's accuracy varies with different weight values, with 0.10 achieving the optimal performance at 82.4\%. We observed a clear trend where very high weights (1.0) significantly degraded performance to 79.60\%, while moderate weights (0.25, 0.50) maintained consistent performance at 82.0\%. Lower weights (0.01, 0.05) showed slightly reduced performance at 81.3\% and 81.5\% respectively, indicating that the auxiliary loss weight needs to be carefully tuned to achieve the best balance between learning objectives.
 
 \begin{table}[htbp]
     \centering
-    \caption{Accuracy results for different weight of auxiliary loss}
+    \caption{Accuracy for different auxiliary loss weights}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{ccccccc}
         \toprule
@@ -40,13 +40,13 @@ We conducted experiments to analyze the impact of auxiliary loss weights on mode
     \label{tab:weights_accuracy}
 \end{table}
 
-\subsection{combination of Losses}
+\subsection{Combination of Losses}
 
-We investigated the effect of different weight combinations between reconstruction and auxiliary losses, as shown in Table~\ref{tab:weights_comb}. The results reveal that balancing these two losses is crucial for optimal performance. Equal weighting (0.5, 0.5) yields suboptimal performance at 78.80\%, while gradually increasing the reconstruction loss weight while decreasing the auxiliary loss weight shows steady improvement. The optimal combination is achieved with reconstruction loss weight of 1.0 and auxiliary loss weight of 0.10, resulting in 82.40\% accuracy. Further increasing the reconstruction loss weight to 1.2 while reducing auxiliary loss weight to 0.05 leads to a slight performance degradation (82.0\%), suggesting that maintaining a proper balance between these losses is essential for optimal model performance.
+We investigated the effect of different weight combinations between reconstruction and auxiliary losses, as shown in Table~\ref{tab:weights_comb}. The results reveal that balancing these two losses is crucial for optimal performance. Equal weighting (0.5, 0.5) yields suboptimal performance at 78.80\%, while gradually increasing the reconstruction loss weight and decreasing the auxiliary loss weight shows steady improvement. The optimal combination is achieved with reconstruction loss weight of 1.0 and auxiliary loss weight of 0.10, resulting in 82.40\% accuracy. Further increasing the reconstruction loss weight to 1.2 while reducing auxiliary loss weight to 0.05 leads to a slight performance degradation (82.0\%), suggesting that maintaining a proper balance between these losses is essential for optimal model performance.
 
 \begin{table}[htbp]
     \centering
-    \caption{Accuracy results for different combination of reconstruction and auxiliary loss weights}
+    \caption{Accuracy for different combination of reconstruction and auxiliary loss weights}
     \label{tab:weights_comb}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{ccccccc}
@@ -67,7 +67,7 @@ We examined the impact of varying MLP hidden dimensions on model performance, wi
 
 \begin{table}[htbp]
     \centering
-    \caption{Accuracy results for different MLP sizes}
+    \caption{Accuracy results for different MLP hidden dimensions}
     \label{tab:mlp_accuracy}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{ccccccc}

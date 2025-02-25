@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  24 FEB 2025 21:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  24 FEB 2025 22:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -710,104 +710,99 @@ Underfull \hbox (badness 2181) in paragraph at lines 46--47
 
 [3]) (chapters/results.tex
 
-LaTeX Warning: Citation `9289413' on page 4 undefined on input line 5.
-
-
-
 <images/recon.png, id=33, 1190.484pt x 972.798pt>
 File: images/recon.png Graphic file (type png)
 <use images/recon.png>
-Package pdftex.def Info: images/recon.png  used on input line 17.
+Package pdftex.def Info: images/recon.png  used on input line 19.
 (pdftex.def)             Requested size: 328.82707pt x 268.70035pt.
 
-Underfull \hbox (badness 1377) in paragraph at lines 45--46
+
+[4]
+Underfull \hbox (badness 1377) in paragraph at lines 47--48
 \OT1/ptm/m/n/10 of De-no-MAE and De-no-MAE2.0 us-ing t-distributed
  []
 
 
 
-[4]
 <images/denoMAE_no_mask.png, id=38, 722.7pt x 722.7pt>
 File: images/denoMAE_no_mask.png Graphic file (type png)
 <use images/denoMAE_no_mask.png>
-Package pdftex.def Info: images/denoMAE_no_mask.png  used on input line 55.
+Package pdftex.def Info: images/denoMAE_no_mask.png  used on input line 57.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
 <images/denoMAE2_no_mask.png, id=40, 722.7pt x 722.7pt>
 File: images/denoMAE2_no_mask.png Graphic file (type png)
 <use images/denoMAE2_no_mask.png>
-Package pdftex.def Info: images/denoMAE2_no_mask.png  used on input line 59.
+Package pdftex.def Info: images/denoMAE2_no_mask.png  used on input line 61.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
 <images/denoMAE_mask.png, id=42, 722.7pt x 722.7pt>
 File: images/denoMAE_mask.png Graphic file (type png)
 <use images/denoMAE_mask.png>
-Package pdftex.def Info: images/denoMAE_mask.png  used on input line 63.
+Package pdftex.def Info: images/denoMAE_mask.png  used on input line 65.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
 <images/denoMAE2_mask.png, id=44, 722.7pt x 722.7pt>
 File: images/denoMAE2_mask.png Graphic file (type png)
 <use images/denoMAE2_mask.png>
-Package pdftex.def Info: images/denoMAE2_mask.png  used on input line 67.
+Package pdftex.def Info: images/denoMAE2_mask.png  used on input line 69.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
-
-Underfull \vbox (badness 2443) has occurred while \output is active []
-
-
-
-<images/cm.png, id=46, 797.6199pt x 715.473pt>
-File: images/cm.png Graphic file (type png)
-<use images/cm.png>
-Package pdftex.def Info: images/cm.png  used on input line 80.
-(pdftex.def)             Requested size: 205.98834pt x 184.77403pt.
-<images/finetune_epoch.png, id=47, 505.28775pt x 331.35796pt>
-File: images/finetune_epoch.png Graphic file (type png)
-<use images/finetune_epoch.png>
-Package pdftex.def Info: images/finetune_epoch.png  used on input line 108.
-(pdftex.def)             Requested size: 205.98834pt x 135.08405pt.
 
 
 [5 <./images/recon.png>]
+<images/cm.png, id=50, 797.6199pt x 715.473pt>
+File: images/cm.png Graphic file (type png)
+<use images/cm.png>
+Package pdftex.def Info: images/cm.png  used on input line 101.
+(pdftex.def)             Requested size: 205.98834pt x 184.77403pt.
+<images/finetune_epoch.png, id=51, 505.28775pt x 331.35796pt>
+File: images/finetune_epoch.png Graphic file (type png)
+<use images/finetune_epoch.png>
+Package pdftex.def Info: images/finetune_epoch.png  used on input line 110.
+(pdftex.def)             Requested size: 205.98834pt x 135.08405pt.
 
-<images/SNR_Accuracy_Plot.png, id=52, 632.6034pt x 388.8126pt>
+
+
+
+[6 <./images/cm.png> <./images/finetune_epoch.png> <./images/denoMAE_no_mask.png> <./images/denoMAE2_no_mask.png> <./images/denoMAE_mask.png> <./images/denoMAE2_mask.png>]
+<images/SNR_Accuracy_Plot.png, id=65, 632.6034pt x 388.8126pt>
 File: images/SNR_Accuracy_Plot.png Graphic file (type png)
 <use images/SNR_Accuracy_Plot.png>
 Package pdftex.def Info: images/SNR_Accuracy_Plot.png  used on input line 123.
 (pdftex.def)             Requested size: 228.8775pt x 140.67249pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 135.
+
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 160.
 (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+Underfull \hbox (badness 1360) in paragraph at lines 160--161
+\OT1/ptm/m/n/10 learning-based RF sig-nal pro-cess-ing. It con-sists of
+ []
 
-[6 <./images/cm.png> <./images/finetune_epoch.png> <./images/denoMAE_no_mask.png> <./images/denoMAE2_no_mask.png> <./images/denoMAE_mask.png> <./images/denoMAE2_mask.png>]
 
-<images/trans.png, id=66, 578.16pt x 361.35pt>
+
+[7 <./images/SNR_Accuracy_Plot.png>]
+<images/trans.png, id=71, 578.16pt x 361.35pt>
 File: images/trans.png Graphic file (type png)
 <use images/trans.png>
-Package pdftex.def Info: images/trans.png  used on input line 145.
+Package pdftex.def Info: images/trans.png  used on input line 170.
 (pdftex.def)             Requested size: 228.8775pt x 143.04872pt.
 ) (chapters/ablation.tex
 
-[7 <./images/SNR_Accuracy_Plot.png> <./images/trans.png>]
 
-) (chapters/conclusion.tex) (bare_jrnl_new_sample4.bbl
+
+[8 <./images/trans.png>]) (chapters/conclusion.tex) (bare_jrnl_new_sample4.bbl
 Underfull \hbox (badness 1389) in paragraph at lines 25--28
 []\OT1/ptm/m/n/8 W. Zhang, K. Li, S. Yang, C. Gao, W. Yang, S. Yuan,
  []
 
 
 
-[8]
 
 
-Underfull \vbox (badness 1253) has occurred while \output is active []
+[9]
 
+)
 
-
-[9])
-
-
-
-[10
-
-] (chapters/appendix.tex
+[10] (chapters/appendix.tex
 <images/cons.png, id=83, 789.276pt x 939.291pt>
 File: images/cons.png Graphic file (type png)
 <use images/cons.png>
@@ -825,12 +820,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 4217) has occurred while \output is active []
-
-
-
 )
+
+
 
 [11
 
@@ -839,21 +831,17 @@ Underfull \vbox (badness 4217) has occurred while \output is active []
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 19617 strings out of 473536
- 381742 string characters out of 5713988
- 1154448 words of memory out of 5000000
- 42445 multiletter control sequences out of 15000+600000
- 600206 words of font info for 118 fonts, out of 8000000 for 9000
+ 19625 strings out of 473536
+ 381889 string characters out of 5713988
+ 1150448 words of memory out of 5000000
+ 42454 multiletter control sequences out of 15000+600000
+ 599099 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,131p,1508b,1747s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,10n,131p,1524b,1747s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_new_sample4.pdf (13 pages, 32869560 bytes).
+Output written on bare_jrnl_new_sample4.pdf (13 pages, 32871299 bytes).
 PDF statistics:
  172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

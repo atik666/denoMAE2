@@ -38,7 +38,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Image Masking and Encoding}{3}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Decoder Architecture and Reconstruction}{3}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Classification Branch}{3}{}\protected@file@percent }
-\citation{doan2020learning,9289413}
+\citation{doan2020learning}
 \citation{peng2018modulation}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Overall Objective}{4}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}Fine-Tuning on Downstream Tasks}{4}{}\protected@file@percent }
@@ -47,52 +47,57 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Parameters in Sample Generation}{4}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {V}Experimental Results}{4}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Denoising Performance}{4}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Comparison of SSIM and PSNR for DenoMAE and DenoMAE2.0}}{4}{}\protected@file@percent }
-\newlabel{tab:ssim_psnr_comparison}{{I}{4}{}{table.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Reconstruction}}{5}{}\protected@file@percent }
+\citation{van2008visualizing}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Reconstruction performance comparison between DenoMAE and DenoMAE2.0}}{5}{}\protected@file@percent }
 \newlabel{fig:recon}{{2}{5}{}{figure.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Visualization with TSNE}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Comparison of SSIM and PSNR for DenoMAE and DenoMAE2.0}}{5}{}\protected@file@percent }
+\newlabel{tab:ssim_psnr_comparison}{{I}{5}{}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Latent Space Visualization with TSNE}{5}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Finetuning Accuracy}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Performance on Number of Epochs}{5}{}\protected@file@percent }
-\citation{o2018over}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Latent representation visualization using t-SNE. From left to right: (1) DenoMAE without masking, (2) DenoMAE2.0 without masking, (3) DenoMAE with 0.75\% masking, and (4) DenoMAE2.0 with 0.75\% masking.}}{6}{}\protected@file@percent }
 \newlabel{fig:tsne}{{3}{6}{}{figure.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix}}{6}{}\protected@file@percent }
-\newlabel{fig:confusion}{{4}{6}{}{figure.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Downstream accuracy.}}{6}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Downstream classification accuracy for different models}}{6}{}\protected@file@percent }
 \newlabel{tab:example}{{II}{6}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Performance on Number of Epochs}{6}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Performance Across Different SNRs}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix for DenoMAE2.0 downstream classification}}{6}{}\protected@file@percent }
+\newlabel{fig:confusion}{{4}{6}{}{figure.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Epoch finetuning.}}{6}{}\protected@file@percent }
 \newlabel{fig:epoch}{{5}{6}{}{figure.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-F}}Transferability}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {V-F}1}RadioML Dataset}{6}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces SNR}}{7}{}\protected@file@percent }
+\citation{peng2018modulation}
+\citation{faysal2024nmformer}
+\citation{meng2018automatic}
+\citation{sun2022automatic}
+\citation{faysal2025denomae}
+\citation{o2018over}
+\citation{ccamlibel2024automatic}
+\citation{elyousseph2021deep}
+\citation{cheng2024automatic,jagatheesaperumal2024deep,10014805}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Comparison of DenoMAE2.0 with other modulation classification methods}}{7}{}\protected@file@percent }
+\newlabel{tab:compare}{{III}{7}{}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Accuracy comparison across different SNRs}}{7}{}\protected@file@percent }
 \newlabel{fig:snr_acc}{{6}{7}{}{figure.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {V-F}2}Performance}{7}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Transfer}}{7}{}\protected@file@percent }
-\newlabel{fig:trans}{{7}{7}{}{figure.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Ablation Study}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Effect of the Loss Function}{7}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Effect of loss}}{7}{}\protected@file@percent }
-\newlabel{tab:loss}{{III}{7}{}{table.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Effect of auxiliary loss weights}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Comparison with Other AMC Methods}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Transferability}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-A}1}RadioML Dataset}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-A}2}Performance}{7}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Transfer learning performance on RadioML dataset}}{8}{}\protected@file@percent }
+\newlabel{fig:trans}{{7}{8}{}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Ablation Study}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Effect of the Loss Function}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Accuracy for different loss configurations}}{8}{}\protected@file@percent }
+\newlabel{tab:loss}{{IV}{8}{}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Effect of Auxiliary Loss Weights}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Accuracy for different auxiliary loss weights}}{8}{}\protected@file@percent }
+\newlabel{tab:weights_accuracy}{{V}{8}{}{table.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Combination of Losses}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Accuracy for different combination of reconstruction and auxiliary loss weights}}{8}{}\protected@file@percent }
+\newlabel{tab:weights_comb}{{VI}{8}{}{table.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-D}}Effect of Number of MLP Hidden Dimensions}{8}{}\protected@file@percent }
 \bibstyle{IEEEtran}
 \bibdata{references}
 \bibcite{zhang2024maskmatch}{1}
 \bibcite{pmlr-v182-poulain22a}{2}
-\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Accuracy results for different weight of auxiliary loss}}{8}{}\protected@file@percent }
-\newlabel{tab:weights_accuracy}{{IV}{8}{}{table.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}combination of Losses}{8}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Accuracy results for different combination of reconstruction and auxiliary loss weights}}{8}{}\protected@file@percent }
-\newlabel{tab:weights_comb}{{V}{8}{}{table.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}Effect of Number of MLP Hidden Dimensions}{8}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Accuracy results for different MLP sizes}}{8}{}\protected@file@percent }
-\newlabel{tab:mlp_accuracy}{{VI}{8}{}{table.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-E}}Effect of number of decoders}{8}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Accuracy results for different decoder sizes}}{8}{}\protected@file@percent }
-\newlabel{tab:decoder_accuracy}{{VII}{8}{}{table.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{8}{}\protected@file@percent }
 \bibcite{chen2020bigselfsupervisedmodelsstrong}{3}
 \bibcite{xu2022revisitingpretrainingsemisupervisedlearning}{4}
 \bibcite{cai2022semisupervisedvisiontransformersscale}{5}
@@ -113,6 +118,13 @@
 \bibcite{zhang2021efficient}{20}
 \bibcite{doan2020learning}{21}
 \bibcite{hamidi2021mcformer}{22}
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Accuracy results for different MLP hidden dimensions}}{9}{}\protected@file@percent }
+\newlabel{tab:mlp_accuracy}{{VII}{9}{}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-E}}Effect of number of decoders}{9}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Accuracy results for different decoder sizes}}{9}{}\protected@file@percent }
+\newlabel{tab:decoder_accuracy}{{VIII}{9}{}{table.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{9}{}\protected@file@percent }
 \bibcite{ya2022large}{23}
 \bibcite{he2020momentumcontrastunsupervisedvisual}{24}
 \bibcite{berthelot2019mixmatch}{25}
@@ -125,31 +137,26 @@
 \bibcite{ren2022sigtefficientendtoendmimoofdm}{32}
 \bibcite{kunde2023transformers}{33}
 \bibcite{peng2018modulation}{34}
-\bibcite{faysal2024nmformer}{35}
-\bibcite{meng2018automatic}{36}
-\bibcite{sun2022automatic}{37}
-\citation{peng2018modulation}
-\citation{faysal2024nmformer}
-\citation{meng2018automatic}
-\citation{sun2022automatic}
-\citation{faysal2025denomae}
-\@writefile{toc}{\contentsline {section}{\numberline {VIII}Diagrams}{11}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces List of classes in the diagram}}{11}{}\protected@file@percent }
-\newlabel{tab:classes}{{VIII}{11}{}{table.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces List of classes in the RadioML diagram}}{11}{}\protected@file@percent }
-\newlabel{tab:radioml_classes}{{IX}{11}{}{table.9}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {X}{\ignorespaces List of hyperparameters during pretraining}}{11}{}\protected@file@percent }
-\newlabel{tab:pre_para}{{X}{11}{}{table.10}{}}
+\bibcite{van2008visualizing}{35}
+\bibcite{faysal2024nmformer}{36}
+\bibcite{meng2018automatic}{37}
+\bibcite{sun2022automatic}{38}
+\bibcite{ccamlibel2024automatic}{39}
+\bibcite{elyousseph2021deep}{40}
+\bibcite{cheng2024automatic}{41}
+\bibcite{jagatheesaperumal2024deep}{42}
+\bibcite{10014805}{43}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Diagrams}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces List of classes from our dataset}}{11}{}\protected@file@percent }
+\newlabel{tab:cons_classes}{{IX}{11}{}{table.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {X}{\ignorespaces List of classes in the RadioML diagram}}{11}{}\protected@file@percent }
+\newlabel{tab:radioml_classes}{{X}{11}{}{table.10}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {XI}{\ignorespaces List of hyperparameters during pretraining}}{11}{}\protected@file@percent }
-\newlabel{tab:fine_para}{{XI}{11}{}{table.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {IX}List of hyperparameter During Pretraining}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {X}List of hyperparameter During Finetuning}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {XI}More Denoising Examples}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {XII}Comparison with Other Methods}{11}{}\protected@file@percent }
+\newlabel{tab:pre_para}{{XI}{11}{}{table.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {XII}{\ignorespaces List of hyperparameters during pretraining}}{11}{}\protected@file@percent }
+\newlabel{tab:fine_para}{{XII}{11}{}{table.12}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces constellation diagram}}{12}{}\protected@file@percent }
 \newlabel{fig:cons}{{8}{12}{}{figure.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {XII}{\ignorespaces Comparison of DenoMAE2.0 with other modulation classification methods}}{12}{}\protected@file@percent }
-\newlabel{compare}{{XII}{12}{}{table.12}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces RadioML diagram}}{13}{}\protected@file@percent }
 \newlabel{fig:radio}{{9}{13}{}{figure.9}{}}
 \gdef \@abspage@last{13}

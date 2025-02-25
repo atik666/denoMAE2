@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex bare_jrnl_new_sample4"] 1740449975.87057 "bare_jrnl_new_sample4.aux" "bare_jrnl_new_sample4.bbl" "bare_jrnl_new_sample4" 1740449985.34474 0
-  "./references.bib" 1740426213 16568 abdcb080aa36539b4fa4596fec355b43 ""
+["bibtex bare_jrnl_new_sample4"] 1740455667.16193 "bare_jrnl_new_sample4.aux" "bare_jrnl_new_sample4.bbl" "bare_jrnl_new_sample4" 1740455753.36068 0
+  "./references.bib" 1740454279 19010 06a4979945c3bc06c0add9d7926fdb35 ""
   "C:/Users/atik666/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "bare_jrnl_new_sample4.aux" 1740449984 11592 51d0ca612bc1f1e6f437973fc7d5fb78 "pdflatex"
+  "bare_jrnl_new_sample4.aux" 1740455752 11831 3eeb13a6a9617e147f80112ecd0adf5c "pdflatex"
   (generated)
   "bare_jrnl_new_sample4.bbl"
   "bare_jrnl_new_sample4.blg"
   (rewritten before read)
-["pdflatex"] 1740449976.06073 "d:/OneDrive - Rowan University/RA/Spring 25/DenoMAE2.0/DenoMAE2/bare_jrnl_new_sample4.tex" "bare_jrnl_new_sample4.pdf" "bare_jrnl_new_sample4" 1740449985.34506 0
+["pdflatex"] 1740455744.06746 "d:/OneDrive - Rowan University/RA/Spring 25/DenoMAE2.0/DenoMAE2/bare_jrnl_new_sample4.tex" "bare_jrnl_new_sample4.pdf" "bare_jrnl_new_sample4" 1740455753.36103 0
   "C:/Users/atik666/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1740416577 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/atik666/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1737490519 12014361 2b9681ff934868478c1cafb79386af98 ""
   "C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -199,16 +199,16 @@
   "C:/Users/atik666/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/atik666/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "IEEEtran.cls" 1740415883 282108 7379a03af5f3d0dad26db23a43c3a726 ""
-  "bare_jrnl_new_sample4.aux" 1740449984 11592 51d0ca612bc1f1e6f437973fc7d5fb78 "pdflatex"
-  "bare_jrnl_new_sample4.bbl" 1740449976 12293 891d6bd1c89d3b3d7d6125ae8f7ed162 "bibtex bare_jrnl_new_sample4"
+  "bare_jrnl_new_sample4.aux" 1740455752 11831 3eeb13a6a9617e147f80112ecd0adf5c "pdflatex"
+  "bare_jrnl_new_sample4.bbl" 1740455667 13952 3bc885e163ecbd38a690009c3c5fa647 "bibtex bare_jrnl_new_sample4"
   "bare_jrnl_new_sample4.tex" 1740427271 3187 7356a31e87bd113dba05395ca2b87f7c ""
-  "chapters/ablation.tex" 1740449964 6065 9413af4693bbf4b3e369d87dced786f6 ""
-  "chapters/appendix.tex" 1740151689 5541 c50046d174551bac9c108d133168b8d3 ""
+  "chapters/ablation.tex" 1740455103 6085 56ac0888b4e10b747c083a85dbde8bc0 ""
+  "chapters/appendix.tex" 1740455647 4403 996be1e7aaea1c71c68b071ce2f67eb4 ""
   "chapters/conclusion.tex" 1739821957 757 2f8cca036d682464235f97475fc8bc62 ""
   "chapters/intro.tex" 1740426354 4700 0334e022fb949a303c8824f37bcf82c1 ""
-  "chapters/method.tex" 1740447593 6065 9764379eaec4b87b8b53bedaba99d896 ""
+  "chapters/method.tex" 1740455743 6059 7f8c364b3e390bf0f412e5b61a4ecdb1 ""
   "chapters/related.tex" 1740426213 3854 c0cd67ec80f4031afd47e0c918ceefaa ""
-  "chapters/results.tex" 1740419126 12728 cac58325b9aca9007efd9355341c843c ""
+  "chapters/results.tex" 1740455647 15413 eaaadb462ec6fee422768b138621d9f1 ""
   "d:/OneDrive - Rowan University/RA/Spring 25/DenoMAE2.0/DenoMAE2/bare_jrnl_new_sample4.tex" 1740427271 3187 7356a31e87bd113dba05395ca2b87f7c ""
   "images/SNR_Accuracy_Plot.png" 1739833808 588573 3b1d5ee9c88c37170e0a2fafa71bd0c5 ""
   "images/cm.png" 1740074890 247740 1db813104b1f438e43c370a2d847427f ""

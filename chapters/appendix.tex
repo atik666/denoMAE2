@@ -1,10 +1,11 @@
 \section{Diagrams}
 
-Figure \ref{fig:cons} presents the constellation diagrams derived from the dataset utilized in our research. Each diagram includes a sample from each class along with their corresponding randomly generated noise. The diagrams depict the signal as a two-dimensional scatter plot in the complex plane at symbol sampling instants. Additionally, we provide the noiseless images to illustrate the original signal without noise. The list of classes are provided in Table \ref{tab:classes}.
+Figure \ref{fig:cons} presents the constellation diagrams derived from the dataset utilized in our research. Each diagram includes a sample from each class along with their corresponding randomly generated noise. The diagrams depict the signal as a two-dimensional scatter plot in the complex plane known as constellation diagrams. Additionally, we provide the noiseless images to illustrate the original signal without noise. The list of classes are provided in Table \ref{tab:cons_classes}.
 
 \begin{table}[h]
     \centering
-    \caption{List of classes in the diagram}
+    \caption{List of classes from our dataset}
+    \label{tab:cons_classes}
     \begin{tabular}{|c|c|}
         \hline
         Class Number & Class Name \\ \hline
@@ -19,10 +20,9 @@ Figure \ref{fig:cons} presents the constellation diagrams derived from the datas
         9 & OOK \\ \hline
         10 & OQPSK \\ \hline
     \end{tabular}
-    \label{tab:classes}
 \end{table}
 
-Figure \ref{fig:radio} illustrates the RadioML diagram, which is used to visualize the performance of machine learning models in radio signal classification tasks. This diagram helps in understanding how well the model can distinguish between different types of radio signals.
+Figure~\ref{fig:radio} illustrates the RadioML diagram, which is used to visualize the performance of machine learning models in radio signal classification tasks. These constellation diagrams helps in understanding how well the model can distinguish between different types of radio signals. The list of classes are provided in Table~\ref{tab:radioml_classes}.
 
 \begin{figure*}[hbp]
     \centering
@@ -74,8 +74,6 @@ Figure \ref{fig:radio} illustrates the RadioML diagram, which is used to visuali
     \label{fig:radio}
 \end{figure*}
 
-\section{List of hyperparameter During Pretraining}
-
 \begin{table}[h]
     \centering
     \caption{List of hyperparameters during pretraining}
@@ -102,8 +100,6 @@ Figure \ref{fig:radio} illustrates the RadioML diagram, which is used to visuali
     \label{tab:pre_para}
 \end{table}
 
-\section{List of hyperparameter During Finetuning}
-
 \begin{table}[h]
     \centering
     \caption{List of hyperparameters during pretraining}
@@ -124,28 +120,3 @@ Figure \ref{fig:radio} illustrates the RadioML diagram, which is used to visuali
     \end{tabular}
     \label{tab:fine_para}
 \end{table}
-
-\section{More Denoising Examples}
-
-\begin{table*}[htbp]
-    \centering
-    \caption{Comparison of DenoMAE2.0 with other modulation classification methods}
-    \label{compare}
-    \begin{tabular}{cccccc}
-    \toprule
-    \multirow{2}{*}{\textbf{Methods}} & \multicolumn{2}{c}{\textbf{Number of samples}} & \multirow{2}{*}{\textbf{SNR dB}} & \multirow{2}{*}{\textbf{Number of classes}} & \multirow{2}{*}{\textbf{Test accuracy (\%)}} \\ 
-    \cmidrule(lr){2-3}
-     & \textbf{Pretraining} & \textbf{Fine-tuning} & & \\ \midrule
-    
-    AlexNet \cite{peng2018modulation}  & 800,000 (train) & 8,000 (test)  & 2 & 8 & 82.8  \\
-    NMformer \cite{faysal2024nmformer} & 106,800 & 3,000 & 0.5 - 4.5 & 10 & 71.6 \\
-    CNN-AMC \cite{meng2018automatic} & 79,200 & 228,060 & -6 & 4 & 50.40 \\
-    DL-GRF \cite{sun2022automatic} &  2,000 (train) & 200 (test) & 0 & 4 & 59 \\
-    DenoMAE \cite{faysal2025denomae} & 10,000 & 1,000 & 0 - 10 & 10 & 81.3 \\
-    DenoMAE2.0 (\textbf{Ours}) & 10,000 & 1,000 & 0 - 10 & 10 & 82.4 \\
-    
-    \bottomrule
-    \end{tabular}
-\end{table*}
-
-\section{Comparison with Other Methods}

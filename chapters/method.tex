@@ -6,7 +6,7 @@ The overall framework of the proposed DenoMAE2.0 is illustrated in Figure \ref{f
 # f_enc , f_dec: encoder , decoder
 # f_mlp: patch classification head
 # mask_r: mask ratio
-# \lambda_{rec}, \lambda_{class}: loss function weights
+# lambda_rec, lambda_class: loss function weights
 
 for x, tgt in loader: # load a minibatch
     x = patch_emb(x) # embed patches
