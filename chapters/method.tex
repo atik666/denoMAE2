@@ -9,42 +9,42 @@ The overall framework of the proposed DenoMAE2.0 is illustrated in Figure \ref{f
 # lambda_rec, lambda_cls: loss function weights
 
 for x, _ in loader: # load a minibatch
-    x = patch_emb(x) # embed patches
-    x_v, x_m, mask_ids = masking(x, mask_r) # random split visible and masked patches
-    q_v = f_enc(x_v) # local patch features
-    logits = f_mlp(q_v) # predicted labels
-    k_m = f_dec(q_v) # reconstructed pixels
+    x = patch_emb(x) # patch embeddings
+    x_v, x_m, mask_ids = masking(x, mask_r) # random visible and masked patches
+    q_v = f_enc(x_v) # unmasked patch features
+    logits = f_mlp(q_v) # predicted patch labels
+    k_m = f_dec(q_v) # pixels reconstruction
     labels = class_labels(mask_ids) # class labels generation
     loss = lambda_rec * rec_loss(k_m, x_m) + lambda_cls * cls_loss(logits, labels)
     loss.backward()
     update() # optimizer update
 
-def class_labels(mask_ids):
+def class_labels(mask_ids): # label generalization for patches
     classes = ((img_size//patch_size)**2) * (1 - mask_r)
     labels = classes[mask, where mask == 0] # 0: visible patches, 1: masked patches
     return labels
 
-def rec_loss(k, x): # reconstruction
-    x = norm_pix(x) # normalize every patch
-    loss = (k - x) ** 2 # compute MSE loss over masked patches
+def rec_loss(k, x): # reconstruction loss
+    x = normalize(x) # normalize patches
+    loss = (k - x) ** 2 # MSE loss
     return loss
 
-def cls_loss(logits, tgt): # classification
+def cls_loss(logits, tgt): # classification loss
     loss = CrossEntropyLoss(logits, tgt)
     return loss
 \end{lstlisting}
 
-\subsection{Image Masking and Encoding}
+\subsection{Masking Strategy and Encoder Architecture}
 
-The preprocessing stage transforms an input image $\mathbf{x} \in \mathbb{R}^{H \times W \times C}$ into a sequence of non-overlapping patches $\mathbf{x}_p \in \mathbb{R}^{N \times (P^2 \cdot C)}$, where $(H, W)$ defines the spatial dimensions, $C$ denotes the number of channels, and $(P, P)$ specifies the patch size. The total number of patches is $N = HW/P^2$. 
+During preprocessing, we convert each input image $\mathbf{x} \in \mathbb{R}^{H \times W \times C}$ into a collection of discrete, non-overlapping patches represented as $\mathbf{x}_p \in \mathbb{R}^{N \times (P^2 \cdot C)}$. Here, the image dimensions are given by height $H$ and width $W$, while $C$ represents the number of color channels. Each patch has dimensions $(P, P)$, resulting in a total of $N = HW/P^2$ patches across the image.
 
-These patches undergo linear projection through a PatchEmbed layer to obtain initial embeddings. We adopt a masking strategy that randomly removes a substantial portion (75\%) of the patches. Let $\mathbf{x}_v$ and $\mathbf{x}_m$ represent the visible and masked patches respectively. The visible patches $\mathbf{x}_v$ are combined with learned positional embeddings and processed by a Vision Transformer (ViT) encoder to generate patch-level features $\mathbf{q}_v$. These features form the basis for downstream reconstruction and classification tasks.
+We employ a linear projection via a PatchEmbed layer to transform these patches into initial embeddings. Our approach involves randomly masking 75\% of the patches. Denoting visible and masked patches as $\mathbf{x}_v$ and $\mathbf{x}_m$ respectively, we process the visible patches by combining them with learned positional embeddings. These are then fed through a Vision Transformer (ViT) encoder to produce patch-level features $\mathbf{q}_v$, which serve as the foundation for subsequent reconstruction and classification objectives.
 
 \subsection{Decoder Architecture and Reconstruction}
 
-Since the length of visible patch features $\mathbf{q}_v$ is smaller than the total number of image patches $N$, we augment $\mathbf{q}_v$ with mask tokens to construct a complete feature set. Each mask token is a shared, learnable vector that indicates positions requiring reconstruction. Following the encoding process, we enhance this complete feature set with positional embeddings before processing it through a transformer-based decoder. The decoder's output undergoes transformation through a linear projection layer (not depicted in Figure 1) to map features back to pixel space. 
+To address the discrepancy between the length of visible patch features $\mathbf{q}_v$ and the total number of patches $N$, we introduce learnable mask tokens at the masked positions. These mask tokens are shared across all instances and serve as placeholders for reconstruction. The combined features, encompassing both visible features and mask tokens, are enhanced with positional embeddings before being processed by a transformer decoder. The decoder's output is then projected back to the original pixel space through a linear layer (omitted from Figure 1 for simplicity).
 
-The reconstruction objective $\mathcal{L}_{\text{rec}}$ employs mean squared error (MSE) between the reconstructed and original images. Consistent with established approaches, we compute this loss exclusively on the masked patches:
+For the reconstruction objective $\mathcal{L}_{\text{rec}}$, we utilize mean squared error (MSE) loss, to measure the difference between reconstructed and original image patches. Following common practice, this loss calculation is restricted to the masked regions:
 
 \begin{equation}
     \mathcal{L}_{\text{rec}} = \text{MSE}(\hat{\mathbf{x}}_m, \mathbf{x}_m)
@@ -53,7 +53,7 @@ The reconstruction objective $\mathcal{L}_{\text{rec}}$ employs mean squared err
 where $\hat{\mathbf{x}}_m$ represents the reconstructed patches and $\mathbf{x}_m$ denotes the original masked patches.
 
 
-\subsection{Classification Branch}
+\subsection{Patch Classification Head}
 
 The visible patch features $\mathbf{q}_v$ are additionally leveraged for classification. Diverging from traditional classification, where one input contains a single class, we assign visible patches to classes based on their spatial positions. The classification branch takes only the class tokens from the encoder to classify them. The total number of classes is the same as the number of visible patches which is calculated as:
 
@@ -71,7 +71,7 @@ where $\mathbf{p}$ denotes the predicted probabilities and $\mathbf{y}$ represen
 
 \subsection{Overall Objective}
 
-Our DenoMAE2.0 optimizes a combination of reconstruction and classification losses, enabling simultaneous learning of fine-grained local and global features. The overall loss function is formulated as a weighted sum:
+DenoMAE2.0 optimizes a combination of reconstruction and classification losses, enabling simultaneous learning of fine-grained local and global features. The overall loss function is formulated as a weighted sum:
 
 \begin{equation}
     \mathcal{L} = \lambda_{\text{rec}}\mathcal{L}_{\text{rec}} + \lambda_{\text{cls}}\mathcal{L}_{\text{cls}}
@@ -79,6 +79,6 @@ Our DenoMAE2.0 optimizes a combination of reconstruction and classification loss
 
 where $\lambda_{\text{rec}}$ and $\lambda_{\text{cls}}$ are balancing weights for the reconstruction and classification objectives, respectively. Through empirical validation (see Table~\ref{tab:weights_accuracy}), we set $\lambda_{\text{rec}} = 1.0$ and $\lambda_{\text{cls}} = 0.1$.
 
-\subsection{Fine-Tuning on Downstream Tasks}
+\subsection{Fine-Tuning for classification Tasks}
 
-Following pre-training, the DenoMAE2.0 encoder is fine-tuned on specific recognition tasks to enhance performance. During this stage, the decoder and classification head are excluded, retaining only the encoder. For fine-tuning, the model utilizes the complete set of patches, corresponding to the uncorrupted input images, to optimize for downstream recognition tasks.
+Following pre-training, the DenoMAE2.0 encoder is fine-tuned on specific classification tasks to enhance performance. During this stage, the decoder and classification head are excluded, retaining only the encoder. For fine-tuning, the model utilizes the complete set of patches, corresponding to the uncorrupted input images, to optimize for downstream recognition tasks.
