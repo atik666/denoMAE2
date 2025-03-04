@@ -2,7 +2,7 @@
 
 \subsection{Constellation Diagram Generation}
 
-Constellation diagrams offer a more informative approach to modulation classification compared to raw time-series signals, capturing richer detail essential for accurate interpretation \cite{doan2020learning}. The process of generating constellation diagrams for modulation signal classification involves multiple stages. We begin by mapping modulated signals onto a $7 \times 7$ complex plane, which provides sufficient space to capture signal samples while maintaining computational efficiency for SNR ranges of -10 dB to 10 dB. The basic constellation diagram is then enhanced through a multi-step process: first, as a gray image that handles varying pixel densities where multiple samples may occupy single pixels; second, as an enhanced grayscale image that employs an exponential decay model ($B_{i,j}$) to account for both the precise position of samples within pixels and their influence on neighboring pixels. This model considers the sample point's power ($P$), the distance between sample points and pixel centroids ($d_{i,j}$), and an exponential decay rate ($\alpha$) \cite{peng2018modulation}. To make the representation compatible with DenoMAE2.0, which expects RGB input, we generate a three-channel image by creating three distinct enhanced grayscale images from the same data samples, each utilizing different exponential decay rates. 
+Constellation diagrams offer a more informative approach to modulation classification compared to raw time-series signals, capturing richer detail essential for accurate interpretation \cite{doan2020learning}. The process of generating constellation diagrams for modulation signal classification involves multiple stages. We begin by mapping modulated signals onto a complex plane, which provides sufficient space to capture signal samples while maintaining computational efficiency for SNR ranges of -10 dB to 10 dB. The basic constellation diagram is then enhanced through a multi-step process: first, as a gray image that handles varying pixel densities where multiple samples may occupy single pixels; second, as an enhanced grayscale image that employs an exponential decay model ($B_{i,j}$) to account for both the precise position of samples within pixels and their influence on neighboring pixels. This model considers the sample point's power ($P$), the distance between sample points and pixel centroids ($d_{i,j}$), and an exponential decay rate ($\alpha$) \cite{peng2018modulation}. To make the representation compatible with DenoMAE2.0, which expects RGB input, we generate a three-channel image by creating three distinct enhanced grayscale images from the same data samples, each utilizing different exponential decay rates. 
 
 The pretraining dataset comprises 10,000 samples uniformly distributed across ten modulation types, with randomly assigned SNR values in the range of -10 dB to 10 dB. For the downstream classification task, we use 1000 samples for training and 100 samples for testing, evenly distributed among the 10 classes, evaluated at SNR values from -10 dB to 10 dB in 1 dB increments.
 
@@ -78,7 +78,6 @@ After pretraining, we transfer the learned representations to the downstream cla
 \begin{table}[htbp]
     \centering
     \caption{Downstream classification accuracy for different models}
-    \resizebox{0.8\linewidth}{!}{%
     \begin{tabular}{|c|c|}
         \hline
         Method & Test accuracy (\%) \\ \hline
@@ -89,8 +88,7 @@ After pretraining, we transfer the learned representations to the downstream cla
         MAE &  80.10 \\ \hline
         DenoMAE &  81.30 \\ \hline
         DenoMAE2.0 &  \textbf{82.40} \\ \hline
-    \end{tabular}%
-    }
+    \end{tabular}
     \label{tab:example}
 \end{table}
 
@@ -149,26 +147,4 @@ Table~\ref{tab:compare} presents a comprehensive comparison between DenoMAE2.0 a
     \bottomrule
     \end{tabular}
 \end{table*}
-
-
-\subsection{Transferability}
-
-To show the transferability of DenoMAE2.0 on other similar task, we performed experiments on a similar benchmark dataset named RadioML. A brief description on the RadioML dataset is provided in the following subsection.
-
-\subsubsection{RadioML Dataset}
-
-RadioML 2018.01A~\cite{o2018over} is a large-scale dataset designed for AMC and machine learning-based RF signal processing. It consists of 2,555,904 IQ (in-phase and quadrature) signal samples, where each sample is represented as a 1024×2 array, capturing both in-phase and quadrature components. The dataset spans 24 modulation types, including digital and analog schemes such as BPSK, QPSK, 8-PSK, 16-QAM, AM, and FM, making it a comprehensive resource for signal classification tasks. Signals are generated under 26 distinct signal-to-noise ratio (SNR) levels, ranging from -20 dB to +30 dB in 2 dB increments, simulating real-world conditions affected by fading, interference, and channel noise. Each modulation type and SNR combination contains 4096 samples, ensuring a balanced distribution for model training and evaluation. The dataset, widely used as a benchmark in wireless communication~\cite{ccamlibel2024automatic} and spectrum sensing research~\cite{elyousseph2021deep}, facilitates advancements in deep learning-based modulation recognition, interference mitigation, and cognitive radio applications~\cite{cheng2024automatic, jagatheesaperumal2024deep, 10014805}.
-
-To keep a consistent same scale implementation, we used 100 samples in each class for the 24 classes in RadioML for training and 10 samples in each class for testing. Therefore, we used only 2400 samples for training and 240 samples for testing. As a result we only used 0.103\% of the total dataset. We only obtain SNRs of -20, -10, 0, 10, 20 dB to show performance across low and high SNRs, as well as interpolaribility. 
-
-\subsubsection{Performance}
-
-The transfer learning results are shown in Figure~\ref{fig:trans}. Performance improves with increasing SNR, with DenoMAE2.0 consistently outperforming baseline methods across all SNR values. At 20 dB SNR, DenoMAE2.0 achieves 33.75\% accuracy compared to 21.92\% for DenoMAE, representing an 11.83\% improvement. Similarly at 10 dB SNR, DenoMAE2.0 obtains 29.88\% accuracy versus 13.33\% for DenoMAE, a 16.55\% gain. For out-of-distribution SNRs between -10 dB and -20 dB, ViT performs at chance level (4.27\%) while DenoMAE shows minimal improvement. However, DenoMAE2.0 maintains significant accuracy of 7.08\% at -10 dB and 6.67\% at -20 dB, demonstrating enhanced transferability and robustness.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\linewidth]{images/trans.png}
-    \caption{Transfer learning performance on RadioML dataset}
-    \label{fig:trans}
-\end{figure}
 

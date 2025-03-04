@@ -1,3 +1,25 @@
+\section{Transferability}
+
+To show the transferability of DenoMAE2.0 on other similar task, we performed experiments on a similar benchmark dataset named RadioML. A brief description on the RadioML dataset is provided in the following subsection.
+
+\subsection{RadioML Dataset}
+
+RadioML 2018.01A~\cite{o2018over} is a large-scale dataset designed for AMC and machine learning-based RF signal processing. It consists of 2,555,904 IQ (in-phase and quadrature) signal samples, where each sample is represented as a 1024×2 array, capturing both in-phase and quadrature components. The dataset spans 24 modulation types, including digital and analog schemes such as BPSK, QPSK, 8-PSK, 16-QAM, AM, and FM, making it a comprehensive resource for signal classification tasks. Signals are generated under 26 distinct signal-to-noise ratio (SNR) levels, ranging from -20 dB to +30 dB in 2 dB increments, simulating real-world conditions affected by fading, interference, and channel noise. Each modulation type and SNR combination contains 4096 samples, ensuring a balanced distribution for model training and evaluation. The dataset, widely used as a benchmark in wireless communication~\cite{ccamlibel2024automatic} and spectrum sensing research~\cite{elyousseph2021deep}, facilitates advancements in deep learning-based modulation recognition, interference mitigation, and cognitive radio applications~\cite{cheng2024automatic, jagatheesaperumal2024deep, 10014805}.
+
+To keep a consistent same scale implementation, we used 100 samples in each class for the 24 classes in RadioML for training and 10 samples in each class for testing. Therefore, we used only 2400 samples for training and 240 samples for testing. As a result we only used 0.103\% of the total dataset. We only obtain SNRs of -20, -10, 0, 10, 20 dB to show performance across low and high SNRs, as well as interpolaribility. 
+
+\subsection{Performance}
+
+The transfer learning results are shown in Figure~\ref{fig:trans}. Performance improves with increasing SNR, with DenoMAE2.0 consistently outperforming baseline methods across all SNR values. At 20 dB SNR, DenoMAE2.0 achieves 33.75\% accuracy compared to 21.92\% for DenoMAE, representing an 11.83\% improvement. Similarly at 10 dB SNR, DenoMAE2.0 obtains 29.88\% accuracy versus 13.33\% for DenoMAE, a 16.55\% gain. For out-of-distribution SNRs between -10 dB and -20 dB, ViT performs at chance level (4.27\%) while DenoMAE shows minimal improvement. However, DenoMAE2.0 maintains significant accuracy of 7.08\% at -10 dB and 6.67\% at -20 dB, demonstrating enhanced transferability and robustness.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{images/trans.png}
+    \caption{Transfer learning performance on RadioML dataset}
+    \label{fig:trans}
+\end{figure}
+
+
 \section{Diagrams}
 
 Figure \ref{fig:cons} presents the constellation diagrams derived from the dataset utilized in our research. Each diagram includes a sample from each class along with their corresponding randomly generated noise. The diagrams depict the signal as a two-dimensional scatter plot in the complex plane known as constellation diagrams. Additionally, we provide the noiseless images to illustrate the original signal without noise. The list of classes are provided in Table \ref{tab:cons_classes}.

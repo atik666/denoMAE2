@@ -6,15 +6,16 @@ The overall framework of the proposed DenoMAE2.0 is illustrated in Figure \ref{f
 # f_enc , f_dec: encoder , decoder
 # f_mlp: patch classification head
 # mask_r: mask ratio
-# lambda_rec, lambda_class: loss function weights
+# lambda_rec, lambda_cls: loss function weights
 
-for x, tgt in loader: # load a minibatch
+for x, _ in loader: # load a minibatch
     x = patch_emb(x) # embed patches
     x_v, x_m, mask_ids = masking(x, mask_r) # random split visible and masked patches
     q_v = f_enc(x_v) # local patch features
     logits = f_mlp(q_v) # predicted labels
     k_m = f_dec(q_v) # reconstructed pixels
-    loss = lambda_rec * lambda_cls(k_m, x_m) + lambda_cls * cls_loss(logits, tgt)
+    labels = class_labels(mask_ids) # class labels generation
+    loss = lambda_rec * rec_loss(k_m, x_m) + lambda_cls * cls_loss(logits, labels)
     loss.backward()
     update() # optimizer update
 
