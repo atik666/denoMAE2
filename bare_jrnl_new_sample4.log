@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  4 MAR 2025 09:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  12 MAR 2025 15:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -525,22 +525,9 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip61
 )
 \c@@todonotes@numberoftodonotes=\count333
-) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count334
-\float@exts=\toks44
-\float@box=\box71
-\@float@everytoks=\toks45
-\@floatcapt=\box72
-)
-\@float@every@algorithm=\toks46
-\c@algorithm=\count335
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
-
-(C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+ (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
@@ -561,60 +548,79 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count336
-\c@continuedfloat=\count337
-Package caption Info: float package is loaded.
+\c@caption@flags=\count334
+\c@continuedfloat=\count335
 Package caption Info: listings package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count338
+\c@subfigure=\count336
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count339
-) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count340
-\c@ALC@line=\count341
-\c@ALC@rem=\count342
-\c@ALC@depth=\count343
-\ALC@tlm=\skip62
-\algorithmicindent=\skip63
-) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
+\c@subtable=\count337
+) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count338
+\float@exts=\toks44
+\float@box=\box71
+\@float@everytoks=\toks45
+\@floatcapt=\box72
+)
+\@float@every@algorithm=\toks46
+\c@algorithm=\count339
+) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudocode.sty
+Package: algpseudocode 
+ (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count340
+\c@ALG@rem=\count341
+\c@ALG@nested=\count342
+\ALG@tlm=\skip62
+\ALG@thistlm=\skip63
+\c@ALG@Lnr=\count343
+\c@ALG@blocknr=\count344
+\c@ALG@storecount=\count345
+\c@ALG@tmpcounter=\count346
+\ALG@tmplength=\skip64
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count344
+\l__color_backend_stack_int=\count347
 \l__pdf_internal_box=\box73
 ) (bare_jrnl_new_sample4.aux)
 \openout1 = `bare_jrnl_new_sample4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 -- Lines per column: 54 (approximate, difference = 2.43001pt).
 (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
+\scratchcounter=\count348
 \scratchdimen=\dimen325
 \scratchbox=\box74
-\nofMPsegments=\count346
-\nofMParguments=\count347
+\nofMPsegments=\count349
+\nofMParguments=\count350
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count348
+\MPscratchCnt=\count351
 \MPscratchDim=\dimen326
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
 \everyMPtoPDFconversion=\toks48
 ) (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -643,7 +649,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \headsep=21.342pt
 * \topskip=12.0pt
 * \footskip=25.80774pt
-* \marginparwidth=20.0pt
+* \marginparwidth=56.9055pt
 * \marginparsep=10.0pt
 * \columnsep=12.0pt
 * \skip\footins=10.79993pt plus 4.79993pt minus 2.39996pt
@@ -657,11 +663,9 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package newfloat Info: `float' package detected.
-\c@lstlisting=\count351
-
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 48.
-
+\c@lstlisting=\count354
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (chapters/intro.tex
 Underfull \hbox (badness 2277) in paragraph at lines 5--6
@@ -686,93 +690,113 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <images/flow_con.png, id=13, 2120.577pt x 1105.293pt>
 File: images/flow_con.png Graphic file (type png)
 <use images/flow_con.png>
-Package pdftex.def Info: images/flow_con.png  used on input line 22.
+Package pdftex.def Info: images/flow_con.png  used on input line 20.
 (pdftex.def)             Requested size: 422.77664pt x 220.34633pt.
+
+
 ) (chapters/related.tex
 
-
-
 [2 <./images/flow_con.png>]) (chapters/method.tex
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 16.
  (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <9> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 6.
 
 
 
+[3]
 
-[3]) (chapters/results.tex
+) (chapters/dataset.tex
+Underfull \hbox (badness 1902) in paragraph at lines 7--8
+\OT1/ptm/m/n/10 Am-pli-tude Shift Key-ing (4ASK), Four-Level Pulse
+ []
 
-<images/recon.png, id=33, 1190.484pt x 972.798pt>
-File: images/recon.png Graphic file (type png)
-<use images/recon.png>
-Package pdftex.def Info: images/recon.png  used on input line 19.
-(pdftex.def)             Requested size: 328.82707pt x 268.70035pt.
 
 
 [4]
-Underfull \hbox (badness 1377) in paragraph at lines 47--48
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (chapters/results.tex
+
+<images/recon.png, id=37, 1248.519pt x 1283.778pt>
+File: images/recon.png Graphic file (type png)
+<use images/recon.png>
+Package pdftex.def Info: images/recon.png  used on input line 9.
+(pdftex.def)             Requested size: 228.8775pt x 235.34044pt.
+
+
+[5]
+Underfull \hbox (badness 1377) in paragraph at lines 44--45
 \OT1/ptm/m/n/10 of De-no-MAE and De-no-MAE2.0 us-ing t-distributed
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-<images/denoMAE_no_mask.png, id=38, 722.7pt x 722.7pt>
+<images/denoMAE_no_mask.png, id=41, 722.7pt x 722.7pt>
 File: images/denoMAE_no_mask.png Graphic file (type png)
 <use images/denoMAE_no_mask.png>
-Package pdftex.def Info: images/denoMAE_no_mask.png  used on input line 57.
+Package pdftex.def Info: images/denoMAE_no_mask.png  used on input line 54.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
-<images/denoMAE2_no_mask.png, id=40, 722.7pt x 722.7pt>
+<images/denoMAE2_no_mask.png, id=43, 722.7pt x 722.7pt>
 File: images/denoMAE2_no_mask.png Graphic file (type png)
 <use images/denoMAE2_no_mask.png>
-Package pdftex.def Info: images/denoMAE2_no_mask.png  used on input line 61.
+Package pdftex.def Info: images/denoMAE2_no_mask.png  used on input line 58.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
-<images/denoMAE_mask.png, id=42, 722.7pt x 722.7pt>
+<images/denoMAE_mask.png, id=45, 722.7pt x 722.7pt>
 File: images/denoMAE_mask.png Graphic file (type png)
 <use images/denoMAE_mask.png>
-Package pdftex.def Info: images/denoMAE_mask.png  used on input line 65.
+Package pdftex.def Info: images/denoMAE_mask.png  used on input line 62.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
-<images/denoMAE2_mask.png, id=44, 722.7pt x 722.7pt>
+<images/denoMAE2_mask.png, id=47, 722.7pt x 722.7pt>
 File: images/denoMAE2_mask.png Graphic file (type png)
 <use images/denoMAE2_mask.png>
-Package pdftex.def Info: images/denoMAE2_mask.png  used on input line 69.
+Package pdftex.def Info: images/denoMAE2_mask.png  used on input line 66.
 (pdftex.def)             Requested size: 117.43875pt x 117.43011pt.
 
-Underfull \vbox (badness 2443) has occurred while \output is active []
+
+[6 <./images/recon.png>]
+<images/deno_cm.png, id=53, 800.5107pt x 715.473pt>
+File: images/deno_cm.png Graphic file (type png)
+<use images/deno_cm.png>
+Package pdftex.def Info: images/deno_cm.png  used on input line 103.
+(pdftex.def)             Requested size: 109.86021pt x 98.18951pt.
+<images/deno2_cm.png, id=54, 800.5107pt x 715.473pt>
+File: images/deno2_cm.png Graphic file (type png)
+<use images/deno2_cm.png>
+Package pdftex.def Info: images/deno2_cm.png  used on input line 106.
+(pdftex.def)             Requested size: 109.86021pt x 98.18951pt.
+
+Underfull \vbox (badness 1789) has occurred while \output is active []
 
 
 
-[5 <./images/recon.png>]
-<images/cm.png, id=50, 797.6199pt x 715.473pt>
-File: images/cm.png Graphic file (type png)
-<use images/cm.png>
-Package pdftex.def Info: images/cm.png  used on input line 99.
-(pdftex.def)             Requested size: 205.98834pt x 184.77403pt.
-<images/finetune_epoch.png, id=51, 505.28775pt x 331.35796pt>
+<images/finetune_epoch.png, id=55, 505.28775pt x 331.35796pt>
 File: images/finetune_epoch.png Graphic file (type png)
 <use images/finetune_epoch.png>
-Package pdftex.def Info: images/finetune_epoch.png  used on input line 108.
+Package pdftex.def Info: images/finetune_epoch.png  used on input line 117.
 (pdftex.def)             Requested size: 205.98834pt x 135.08405pt.
 
 
-
-
-[6 <./images/cm.png> <./images/finetune_epoch.png> <./images/denoMAE_no_mask.png> <./images/denoMAE2_no_mask.png> <./images/denoMAE_mask.png> <./images/denoMAE2_mask.png>]
-<images/SNR_Accuracy_Plot.png, id=65, 632.6034pt x 388.8126pt>
+[7 <./images/deno_cm.png> <./images/deno2_cm.png> <./images/finetune_epoch.png> <./images/denoMAE_no_mask.png> <./images/denoMAE2_no_mask.png> <./images/denoMAE_mask.png> <./images/denoMAE2_mask.png>]
+<images/SNR_Accuracy_Plot.png, id=71, 632.6034pt x 388.8126pt>
 File: images/SNR_Accuracy_Plot.png Graphic file (type png)
 <use images/SNR_Accuracy_Plot.png>
-Package pdftex.def Info: images/SNR_Accuracy_Plot.png  used on input line 121.
+Package pdftex.def Info: images/SNR_Accuracy_Plot.png  used on input line 130.
 (pdftex.def)             Requested size: 228.8775pt x 140.67249pt.
 ) (chapters/ablation.tex
 
 
+Underfull \hbox (badness 2096) in paragraph at lines 30--30
+[]\OT1/ptm/m/n/10 TABLE VII: |Ac-cu-racy for dif-fer-ent aux-il-iary loss
+ []
 
-[7 <./images/SNR_Accuracy_Plot.png>]
+
+
+[8 <./images/SNR_Accuracy_Plot.png>]
 
 ) (chapters/conclusion.tex) (bare_jrnl_new_sample4.bbl
 Underfull \hbox (badness 1389) in paragraph at lines 25--28
@@ -781,76 +805,28 @@ Underfull \hbox (badness 1389) in paragraph at lines 25--28
 
 
 
-[8]
-
-
-
-[9])
-
-
-
-[10
-
-] (chapters/appendix.tex
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7.
- (C:\Users\atik666\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<images/trans.png, id=81, 578.16pt x 361.35pt>
-File: images/trans.png Graphic file (type png)
-<use images/trans.png>
-Package pdftex.def Info: images/trans.png  used on input line 17.
-(pdftex.def)             Requested size: 228.8775pt x 143.04872pt.
-
-
-<images/cons.png, id=82, 789.276pt x 939.291pt>
-File: images/cons.png Graphic file (type png)
-<use images/cons.png>
-Package pdftex.def Info: images/cons.png  used on input line 51.
-(pdftex.def)             Requested size: 375.80544pt x 447.2428pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/radio.png, id=83, 932.283pt x 1003.677pt>
-File: images/radio.png Graphic file (type png)
-<use images/radio.png>
-Package pdftex.def Info: images/radio.png  used on input line 94.
-(pdftex.def)             Requested size: 375.80544pt x 404.58792pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+[9]
 
 )
 
-[11
-
- <./images/trans.png>] [12 <./images/cons.png>] [13 <./images/radio.png>]
-
-
-
-[14
-
-
-] (bare_jrnl_new_sample4.aux)
+[10] (bare_jrnl_new_sample4.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 19626 strings out of 473536
- 381924 string characters out of 5713988
- 1165448 words of memory out of 5000000
- 42455 multiletter control sequences out of 15000+600000
- 599099 words of font info for 117 fonts, out of 8000000 for 9000
+ 19526 strings out of 473536
+ 383268 string characters out of 5713988
+ 766778 words of memory out of 5000000
+ 42354 multiletter control sequences out of 15000+600000
+ 602891 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,131p,1479b,1747s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_new_sample4.pdf (14 pages, 26242960 bytes).
+ 99i,10n,131p,1357b,516s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/atik666/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on bare_jrnl_new_sample4.pdf (10 pages, 14267780 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 158 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

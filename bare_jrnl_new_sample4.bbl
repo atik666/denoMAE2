@@ -260,34 +260,4 @@ Y.~Sun and E.~A. Ball, ``Automatic modulation classification using techniques
   from image classification,'' \emph{IET Communications}, vol.~16, no.~11, pp.
   1303--1314, 2022.
 
-\bibitem{ccamlibel2024automatic}
-A.~{\c{C}}aml{\i}bel, B.~Karakaya, and Y.~H. Tan{\c{c}}, ``Automatic modulation
-  recognition with deep learning algorithms,'' in \emph{2024 32nd Signal
-  Processing and Communications Applications Conference (SIU)}.\hskip 1em plus
-  0.5em minus 0.4em\relax IEEE, 2024, pp. 1--4.
-
-\bibitem{elyousseph2021deep}
-H.~Elyousseph and M.~L. Altamimi, ``Deep learning radio frequency signal
-  classification with hybrid images,'' in \emph{2021 IEEE International
-  Conference on Signal and Image Processing Applications (ICSIPA)}.\hskip 1em
-  plus 0.5em minus 0.4em\relax IEEE, 2021, pp. 7--11.
-
-\bibitem{cheng2024automatic}
-R.~Cheng, Q.~Chen, and M.~Huang, ``Automatic modulation recognition using deep
-  cvcnn-lstm architecture,'' \emph{Alexandria Engineering Journal}, vol. 104,
-  pp. 162--170, 2024.
-
-\bibitem{jagatheesaperumal2024deep}
-S.~K. Jagatheesaperumal, I.~Ahmad, M.~H{\"o}yhty{\"a}, S.~Khan, and A.~Gurtov,
-  ``Deep learning frameworks for cognitive radio networks: Review and open
-  research challenges,'' \emph{Journal of Network and Computer Applications},
-  p. 104051, 2024.
-
-\bibitem{10014805}
-S.~N. Syed, P.~I. Lazaridis, F.~A. Khan, Q.~Z. Ahmed, M.~Hafeez, V.~Holmes,
-  I.~P. Chochliouros, and Z.~D. Zaharis, ``Deep learning approaches for
-  spectrum sensing in cognitive radio networks,'' in \emph{2022 25th
-  International Symposium on Wireless Personal Multimedia Communications
-  (WPMC)}, 2022, pp. 480--485.
-
 \end{thebibliography}

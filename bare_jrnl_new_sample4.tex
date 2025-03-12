@@ -17,11 +17,16 @@
 \usepackage{placeins}
 \usepackage{newfloat}
 \usepackage{listings}
+\setlength{\marginparwidth}{2cm}
 \usepackage{todonotes}
 \usepackage{amsmath}
-\usepackage{algorithm}
+% \usepackage{algorithm}
 \usepackage{subcaption}
-\usepackage{algorithmic}
+% \usepackage{algorithmic}
+% \usepackage{algorithm2e}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
 % \hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
 
 \usepackage[margin=1in]{geometry}
@@ -31,30 +36,16 @@
 
 \usepackage{xcolor}
 
-\lstset{
-    language=Python,
-    basicstyle=\ttfamily\small,
-    keywordstyle=\bfseries\color{blue},
-    commentstyle=\itshape\color{teal},
-    stringstyle=\color{red},
-    showstringspaces=false,
-    numbers=left,
-    numberstyle=\tiny\color{gray},
-    frame=single,
-    breaklines=true,
-    morekeywords={for, in, def, return, update},
-}
-
 \begin{document}
 
-\title{DenoMAE2.0: Improving Denoising Masked Autoencoders by Classifying Local Patches}
+\title{DenoMAE2.0: Improving Denoising Masked Autoencoders by Classifying Local Patches for Automatic Modulation Classification}
 
-\author{Atik Faysal,~\IEEEmembership{Student member,~IEEE,}, 
-Mohammad Rostami,~\IEEEmembership{Student member,~IEEE,}
-Taha Boushine,~\IEEEmembership{Student member,~IEEE,},
-Reihaneh Gh. Roshan,~\IEEEmembership{Student member,~IEEE,},
-Huaxia Wang,~\IEEEmembership{member,~IEEE,}
-Nikhil Muralidhar,~\IEEEmembership{member,~IEEE,}
+\author{Atik Faysal,~\IEEEmembership{Student Member,~IEEE,}, 
+Mohammad Rostami,~\IEEEmembership{Student Member,~IEEE,}
+Taha Boushine,~\IEEEmembership{Student Member,~IEEE,},
+Reihaneh Gh. Roshan,~\IEEEmembership{Student Member,~IEEE,},
+Huaxia Wang,~\IEEEmembership{Member,~IEEE,}
+Nikhil Muralidhar,~\IEEEmembership{Member,~IEEE,}
 }
 
 % The paper headers
@@ -68,21 +59,19 @@ Nikhil Muralidhar,~\IEEEmembership{member,~IEEE,}
 
 \begin{abstract}
 
-We introduce DenoMAE2.0, an enhanced denoising masked autoencoder that integrates a local patch classification objective alongside traditional reconstruction loss to improve representation learning and robustness. Unlike conventional Masked Autoencoders (MAE), which focus solely on reconstructing missing inputs, DenoMAE2.0 introduces position-aware classification of unmasked patches, enabling the model to capture fine-grained local features while maintaining global coherence. This dual-objective approach is particularly beneficial in semi-supervised learning for wireless communication, where high noise levels and data scarcity pose significant challenges. We conduct extensive experiments on modulation signal classification across a wide range of signal-to-noise ratios (SNRs), from extremely low to moderately high conditions and in a low data regime. Our results demonstrate that DenoMAE2.0 surpasses its predecessor, DenoMAE, and other baselines in both denoising quality and downstream classification accuracy. DenoMAE2.0 achieves a 1.1\% improvement over DenoMAE on our dataset and 11.83\%, 16.55\% significant improved accuracy gains on the RadioML benchmark, over DenoMAE, for constellation diagram classification of modulation signals. 
+We introduce DenoMAE2.0, an enhanced denoising masked autoencoder that integrates a local patch classification objective alongside traditional reconstruction loss to improve representation learning and robustness. Unlike conventional Masked Autoencoders (MAE), which focus solely on reconstructing missing inputs, DenoMAE2.0 introduces position-aware classification of unmasked patches, enabling the model to capture fine-grained local features while maintaining global coherence. This dual-objective approach is particularly beneficial in semi-supervised learning for wireless communication, where high noise levels and data scarcity pose significant challenges. We conduct extensive experiments on modulation signal classification across a wide range of Signal-to-Noise Ratios (SNRs), from extremely low to moderately high conditions and in a low data regime. Our results demonstrate that DenoMAE2.0 surpasses its predecessor, DenoMAE, and other baselines in both denoising quality and downstream classification accuracy. DenoMAE2.0 achieves a 1.1\% improvement over DenoMAE on our dataset and 11.83\%, 16.55\% significant improved accuracy gains on the RadioML benchmark, over DenoMAE, for constellation diagram classification of modulation signals. 
 
 \end{abstract}
 
 \input{chapters/intro}
 \input{chapters/related}
 \input{chapters/method}
+\input{chapters/dataset.tex}
 \input{chapters/results}
 \input{chapters/ablation}
 \input{chapters/conclusion}
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
-
-\clearpage
-\input{chapters/appendix}
 
 \end{document}

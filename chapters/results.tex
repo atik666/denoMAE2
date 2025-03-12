@@ -1,46 +1,43 @@
-\section{Datasets}
-
-\subsection{Constellation Diagram Generation}
-
-Constellation diagrams offer a more informative approach to modulation classification compared to raw time-series signals, capturing richer detail essential for accurate interpretation \cite{doan2020learning}. The process of generating constellation diagrams for modulation signal classification involves multiple stages. We begin by mapping modulated signals onto a complex plane, which provides sufficient space to capture signal samples while maintaining computational efficiency for SNR ranges of -10 dB to 10 dB. The basic constellation diagram is then enhanced through a multi-step process: first, as a gray image that handles varying pixel densities where multiple samples may occupy single pixels; second, as an enhanced grayscale image that employs an exponential decay model ($B_{i,j}$) to account for both the precise position of samples within pixels and their influence on neighboring pixels. This model considers the sample point's power ($P$), the distance between sample points and pixel centroids ($d_{i,j}$), and an exponential decay rate ($\alpha$) \cite{peng2018modulation}. To make the representation compatible with DenoMAE2.0, which expects RGB input, we generate a three-channel image by creating three distinct enhanced grayscale images from the same data samples, each utilizing different exponential decay rates. 
-
-The pretraining dataset comprises 10,000 samples uniformly distributed across ten modulation types, with randomly assigned SNR values in the range of -10 dB to 10 dB. For the downstream classification task, we use 1000 samples for training and 100 samples for testing, evenly distributed among the 10 classes, evaluated at SNR values from -10 dB to 10 dB in 1 dB increments.
-
-\subsection{Parameters in Sample Generation} %Dataset description add table
-
-The dataset comprises signals from ten modulation formats (see appendix, Table~\ref{tab:cons_classes}, for detailed modulation types), each originally of length $L_0 = 1024$. To conform to the transformer's input dimensions, signals undergo a two-step preprocessing: (1) reshaping to $\mathbf{S}_1 \in \mathbb{R}^{32 \times 32}$, and (2) interpolation to $\mathbf{S}2 \in \mathbb{R}^{224 \times 224}$. For formats with $L_0 > 1024$ (e.g., $L_\text{GMSK} = 8196$), signals are initially downsampled to $L_0$. To match the three-channel structure of constellation images $\mathbf{I} \in \mathbb{R}^{3 \times 224 \times 224}$, $\mathbf{S}_2$ is replicated across three channels, yielding $\mathbf{S}_3 \in \mathbb{R}^{3 \times 224 \times 224}$. All signals are sampled at $f_s = 200$ kHz, ensuring consistency across modulation formats. 
-
 \section{Experimental Results}
+
+In this section, we evaluate DenoMAE2.0's denoising capabilities, latent space representation quality, downstream classification accuracy, and robustness across different SNRs. The results demonstrate consistent improvements over baseline methods and the original DenoMAE architecture.
 
 \subsection{Denoising Performance}
 
-\begin{figure*}[htbp]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.7\linewidth]{images/recon.png}
+    \includegraphics[width=1.0\linewidth]{images/recon.png}
     \caption{Reconstruction performance comparison between DenoMAE and DenoMAE2.0}
     \label{fig:recon}
-\end{figure*}
+\end{figure}
 
-During the pretraing DenoMAE2.0 learns to denoise and reconstruct the missing patches and thereby learn their inherent representation. Therefore, we evaluate this denoisng and reconstruction performance during and after the pretraining phase. The effectiveness of DenoMAE2.0 is evident in the reconstructed constellation diagrams shown in Figure \ref{fig:recon}. Compared to DenoMAE, DenoMAE2.0 achieves superior noise reduction while preserving key signal features crucial for modulation classification. Table \ref{tab:ssim_psnr_comparison} quantifies this improvement using two standard metrics: structural similarity index (SSIM) and peak signal-to-noise ratio (PSNR). Interestingly, for the first image, DenoMAE achieved higher SNR and PSNR despite DenoMAE2.0 producing a visually superior reconstruction. However, for the remaining two samples, DenoMAE2.0 outperformed DenoMAE in both SSIM and PSNR.
+During the pretraining phase, DenoMAE2.0 learns to denoise and reconstruct missing patches, thereby developing robust signal representations. We evaluate this denoising and reconstruction performance both during and after pretraining. Figure \ref{fig:recon} illustrates the effectiveness of DenoMAE2.0 through reconstructed constellation diagrams compared to the original DenoMAE model. DenoMAE2.0 achieves superior noise reduction while preserving critical signal features necessary for accurate modulation classification.
 
-\begin{table}[htbp]
+Table \ref{tab:ssim_psnr_comparison} quantifies these improvements using two standard image quality metrics: structural similarity index (SSIM) and peak signal-to-noise ratio (PSNR). We report the mean SSIM and PSNR scores across all validation images (ten images per class) during pretraining. The results demonstrate that DenoMAE2.0 consistently outperforms the original DenoMAE across all modulation classes. For SSIM, DenoMAE2.0 shows improvements ranging from minor enhancements (0.0004 increase for DQPSK) to substantial gains (0.0315 increase for 4PAM). Similarly, for PSNR, DenoMAE2.0 achieves consistent improvements across all classes, with particularly notable enhancements for GMSK (0.2793 dB increase) and OOK (0.2911 dB increase). These consistent improvements in reconstruction quality metrics directly contribute to the enhanced downstream classification performance of DenoMAE2.0.
+
+\begin{table*}[htbp]
     \centering
-    \caption{Comparison of SSIM and PSNR for DenoMAE and DenoMAE2.0}
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{|c|c|c|c|}
-        \hline
-        Method & Image & DenoMAE & DenoMAE2.0 \\ \hline
-        \multirow{3}{*}{SSIM} 
-        & Image1 & 0.9660 & 0.9634 \\ 
-        & Image2 & 0.9407 & 0.9607 \\ 
-        & Image3 & 0.9422 & 0.9466 \\ \hline
-        \multirow{3}{*}{PSNR (dB)} 
-        & Image1 &  42.9054 & 42.3228 \\ 
-        & Image2 & 42.0005 & 42.1061 \\ 
-        & Image3 & 40.3067 & 40.7508 \\ \hline
-    \end{tabular}
+    \caption{Quantitative Comparison of Denoising Performance between DenoMAE and DenoMAE2.0.}
     \label{tab:ssim_psnr_comparison}
-\end{table}
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{ccccc}
+        \hline
+        \multirow{2}{*}{\textbf{Class}} & \multicolumn{2}{c}{\textbf{SSIM}} 
+        & \multicolumn{2}{c}{\textbf{PSNR}} \\ 
+        \cline{2-3} \cline{4-5}
+        & \textbf{DenoMAE} & \textbf{DenoMAE2.0} & \textbf{DenoMAE} & \textbf{DenoMAE2.0} \\ \hline
+        16PAM  & 0.9422 & 0.9464 & 41.6867 & 41.8003 \\
+        4ASK   & 0.9607 & 0.9634 & 42.1780 & 42.3096 \\
+        4PAM   & 0.9328 & 0.9643 & 42.0005 & 42.1061 \\
+        8ASK   & 0.9745 & 0.9813 & 42.8006 & 42.9158 \\
+        CPFSK  & 0.9719 & 0.9738 & 42.3492 & 42.5520 \\
+        DQPSK  & 0.9356 & 0.9360 & 41.8405 & 41.9223 \\
+        GFSK   & 0.9677 & 0.9681 & 42.0733 & 42.1021 \\
+        GMSK   & 0.8749 & 0.8771 & 39.9367 & 40.2160 \\
+        OOK    & 0.9586 & 0.9674 & 42.3674 & 42.6585 \\
+        OQPSK  & 0.9129 & 0.9204 & 41.0052 & 41.1172 \\ \hline
+    \end{tabular}
+\end{table*}
 
 \subsection{Latent Space Visualization with TSNE}
 
@@ -67,7 +64,7 @@ However, in all the plots, classes 1 and 2 entirely overlap with each other, ind
     \subfloat{%
         \includegraphics[trim=1cm 1cm 1cm 1cm,clip,
         width=0.25\linewidth]{images/denoMAE2_mask.png}}
-    \caption{Latent representation visualization using t-SNE. From left to right: (1) DenoMAE without masking, (2) DenoMAE2.0 without masking, (3) DenoMAE with 0.75\% masking, and (4) DenoMAE2.0 with 0.75\% masking.}
+    \caption{Latent representation visualization using t-SNE. From left to right: (1) DenoMAE without masking, (2) DenoMAE2.0 without masking, (3) DenoMAE with 75\% masking, and (4) DenoMAE2.0 with 75\% masking.}
     \label{fig:tsne} 
 \end{figure*}
 
@@ -78,28 +75,40 @@ After pretraining, we transfer the learned representations to the downstream cla
 \begin{table}[htbp]
     \centering
     \caption{Downstream classification accuracy for different models}
-    \begin{tabular}{|c|c|}
+    \begin{tabular}{cc}
         \hline
-        Method & Test accuracy (\%) \\ \hline
-        ViT & 79.90 \\ \hline
-        DEiT & 81.20 \\ \hline
-        MoCov3 & 81.00 \\ \hline
-        BEiT & 80.40 \\ \hline
-        MAE &  80.10 \\ \hline
-        DenoMAE &  81.30 \\ \hline
+        \textbf{Method} & \textbf{Test accuracy (\%)} \\ \hline
+        ViT & 79.90 \\ 
+        DEiT & 81.20 \\ 
+        MoCov3 & 81.00 \\ 
+        BEiT & 80.40 \\
+        MAE &  80.10 \\ 
+        DenoMAE &  81.30 \\
         DenoMAE2.0 &  \textbf{82.40} \\ \hline
     \end{tabular}
     \label{tab:example}
 \end{table}
 
-Figure~\ref{fig:confusion} presents a confusion matrix visualizing the per-class performance of DenoMAE2.0. The diagonal elements indicate correct classifications, while off-diagonal elements show misclassifications. The matrix reveals strong performance across most classes, though notable confusion exists between classes 1 and 2, aligning with observations from the t-SNE analysis. This confusion pattern suggests inherent similarities in the signal characteristics of these two modulation types that challenge even our enhanced model architecture.
+\subsection{Confusion Matrix}
+
+Figure~\ref{fig:confusion} presents confusion matrices visualizing the per-class performance of both DenoMAE and DenoMAE2.0. The diagonal elements indicate correct classifications, while off-diagonal elements show misclassifications. Both models demonstrate perfect classification accuracy (100\%) for several modulation types, specifically 16PAM, 4ASK, 8ASK, DQPSK, GMSK, OOK, and OQPSK. 
+
+However, persistent classification challenges are evident between 4ASK and 4PAM, where both models show significant confusion with 50\% accuracy for each class and 50\% misclassification between them. This symmetric confusion pattern suggests inherent signal similarities between these amplitude modulation schemes that remain difficult to distinguish even with our enhanced architecture. Notably, this confusion pattern directly aligns with observations from the t-SNE analysis, where classes 1 and 2 show complete overlap in the latent space visualization, further confirming the inherent similarity in signal characteristics between these modulation types.
+
+Additionally, both models struggle with differentiating between CPFSK and GFSK, though DenoMAE2.0 shows modest improvement in CPFSK recognition (70\% accuracy compared to 63\% in DenoMAE). Despite this improvement, GFSK classification remains challenging with DenoMAE2.0 achieving only 54\% accuracy (compared to 52\% in DenoMAE), with most misclassifications assigning GFSK signals to the CPFSK class. This confusion pattern aligns with the theoretical similarity between these frequency shift keying techniques, as GFSK is essentially CPFSK with additional Gaussian filtering. These consistent patterns across both model versions indicate fundamental signal similarities that present intrinsic classification challenges rather than model limitations.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\linewidth]{images/cm.png}
-    \caption{Confusion matrix for DenoMAE2.0 downstream classification} 
+    \subfloat{%
+        \includegraphics[width=0.48\linewidth]{images/deno_cm.png}}
+    \hfill
+    \subfloat{%
+        \includegraphics[width=0.48\linewidth]{images/deno2_cm.png}}
+    \caption{Confusion matrices for downstream classification. Left: DenoMAE, Right: DenoMAE2.0} 
     \label{fig:confusion}
 \end{figure}
+
+
 
 \subsection{Performance on Number of Epochs}
 

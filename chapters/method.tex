@@ -2,49 +2,77 @@
 
 The overall framework of the proposed DenoMAE2.0 is illustrated in Figure \ref{fig:denomae2}. DenoMAE2.0 consists of three components: encoder, reconstruction denoising decoder, and local patch classification head. There are two complementary objectives: the denoising reconstruction objective and the local patch classification classification objective. Details are provided in Algorithm~\ref{lst:DenoMAE2.0} and introduced as follows.
 
-\begin{lstlisting}[language=Python, caption={DenoMAE2.0, PyTorch-like pseudo code}, label={lst:DenoMAE2.0}]
-# f_enc , f_dec: encoder , decoder
-# f_mlp: patch classification head
-# mask_r: mask ratio
-# lambda_rec, lambda_cls: loss function weights
+\begin{algorithm}
+    \caption{DenoMAE2.0, PyTorch-like pseudo code}
+    \label{lst:DenoMAE2.0}
+    \begin{algorithmic}[1]
+    \small
+    \Statex \textcolor{green!60!black}{\# f\_enc, f\_dec: encoder, decoder}
+    \Statex \textcolor{green!60!black}{\# f\_mlp: patch classification head}
+    \Statex \textcolor{green!60!black}{\# mask\_r: mask ratio}
+    \Statex \textcolor{green!60!black}{\# lambda\_rec, lambda\_cls: loss function weights}
+    \Statex
+    
+    \For{\texttt{x, \_ in loader}}  \Comment{\textcolor{green!60!black}{ load a minibatch}}
+        \State \texttt{x = patch\_emb(x)}  \Comment{\textcolor{green!60!black}{ patch embeddings}}
 
-for x, _ in loader: # load a minibatch
-    x = patch_emb(x) # patch embeddings
-    x_v, x_m, mask_ids = masking(x, mask_r) # random visible and masked patches
-    q_v = f_enc(x_v) # unmasked patch features
-    logits = f_mlp(q_v) # predicted patch labels
-    k_m = f_dec(q_v) # pixels reconstruction
-    labels = class_labels(mask_ids) # class labels generation
-    loss = lambda_rec * rec_loss(k_m, x_m) + lambda_cls * cls_loss(logits, labels)
-    loss.backward()
-    update() # optimizer update
+        \text{}
+        \State \textcolor{green!60!black}{\# random visible and masked patches}
+        \State \texttt{x\_v,x\_m,mask\_ids = masking(x,mask\_r)} 
 
-def class_labels(mask_ids): # label generalization for patches
-    classes = ((img_size//patch_size)**2) * (1 - mask_r)
-    labels = classes[mask, where mask == 0] # 0: visible patches, 1: masked patches
-    return labels
+        \State \texttt{q\_v = f\_enc(x\_v)}  \Comment{\textcolor{green!60!black}{ unmasked patch features}}
+        \State \texttt{logits = f\_mlp(q\_v)}  \Comment{\textcolor{green!60!black}{ predicted patch labels}}
+        \State \texttt{k\_m = f\_dec(q\_v)}  \Comment{\textcolor{green!60!black}{ pixels reconstruction}}
 
-def rec_loss(k, x): # reconstruction loss
-    x = normalize(x) # normalize patches
-    loss = (k - x) ** 2 # MSE loss
-    return loss
+        \text{}
+        
+        \State \textcolor{green!60!black}{\# class labels generation}
+        
+        \State \texttt{labels = class\_labels(mask\_ids)} 
+        \State \texttt{loss = lambda\_rec *}
+        \Statex  \texttt{~~~~~~~~~~~~~~~rec\_loss(k\_m, x\_m) +}
+        \Statex \texttt{~~~~~~~~~~~~~~~lambda\_cls * }
+        \Statex \texttt{~~~~~~~~~~~~~~~cls\_loss(logits, labels)}
+        \State \texttt{loss.backward()}
+        \State \texttt{optimizer.update()}  \Comment{\textcolor{green!60!black}{ optimizer update}}
+    \EndFor
 
-def cls_loss(logits, tgt): # classification loss
-    loss = CrossEntropyLoss(logits, tgt)
-    return loss
-\end{lstlisting}
+    \text{}
+    \Statex {\textcolor{green!60!black}{\# label generalization for patches}}
+    \Function{class\_labels}{mask\_ids}
+        \State \texttt{classes = $(($img\_size//patch\_size$)^2$) *}
+        \Statex  \texttt{~~~~~~~~~~~~~~~(1 - mask\_r)}
+        \State \texttt{labels =} \Comment{\textcolor{green!60!black}{ 0: visible patches, 1: masked patches}}
+        \Statex \texttt{~~~~~~classes[mask, where mask == 0]}  
+        \State \Return \texttt{labels}
+    \EndFunction
+    \Statex
+    
+    \Function{rec\_loss}{k, x}  \Comment{\textcolor{green!60!black}{ reconstruction loss}}
+        \State \texttt{x = normalize(x)}  \Comment{\textcolor{green!60!black}{ normalize patches}}
+        \State \texttt{loss = $($k - x$)^2$}  \Comment{\textcolor{green!60!black}{ MSE loss}}
+        \State \Return \texttt{loss}
+    \EndFunction
+    \Statex
+    
+    \Function{cls\_loss}{logits, tgt}  \Comment{\textcolor{green!60!black}{ classification loss}}
+        \State \texttt{loss = CrossEntropyLoss(logits, tgt)}
+        \State \Return \texttt{loss}
+    \EndFunction
+    \end{algorithmic}
+    \end{algorithm}
 
 \subsection{Masking Strategy and Encoder Architecture}
 
-During preprocessing, we convert each input image $\mathbf{x} \in \mathbb{R}^{H \times W \times C}$ into a collection of discrete, non-overlapping patches represented as $\mathbf{x}_p \in \mathbb{R}^{N \times (P^2 \cdot C)}$. Here, the image dimensions are given by height $H$ and width $W$, while $C$ represents the number of color channels. Each patch has dimensions $(P, P)$, resulting in a total of $N = HW/P^2$ patches across the image.
+During preprocessing, we convert each input image $\mathbf{x} \in \mathbb{R}^{H \times W \times C}$ into a collection of discrete, non-overlapping patches represented as $\mathbf{x}_p \in \mathbb{R}^{N \times (P^2 \cdot C)}$. Here, the image dimensions are given by height $H$ and width $W$, while $C$ represents the number of color channels. Each patch has dimensions $(P \times P)$, resulting in a total of $N = HW/P^2$ patches across the image.
 
-We employ a linear projection via a PatchEmbed layer to transform these patches into initial embeddings. Our approach involves randomly masking 75\% of the patches. Denoting visible and masked patches as $\mathbf{x}_v$ and $\mathbf{x}_m$ respectively, we process the visible patches by combining them with learned positional embeddings. These are then fed through a Vision Transformer (ViT) encoder to produce patch-level features $\mathbf{q}_v$, which serve as the foundation for subsequent reconstruction and classification objectives.
+We employ a linear projection via a PatchEmbed layer to transform these patches into initial embeddings. Our approach involves randomly masking, $r_{\text{mask}}$, 75\% of the patches. Denoting visible and masked patches as $\mathbf{x}_v$ and $\mathbf{x}_m$ respectively, we process the visible patches by combining them with learned positional embeddings. These are then fed through a ViT encoder to produce patch-level features $\mathbf{q}_v$, which serve as the foundation for subsequent reconstruction and classification objectives.
 
 \subsection{Decoder Architecture and Reconstruction}
 
 To address the discrepancy between the length of visible patch features $\mathbf{q}_v$ and the total number of patches $N$, we introduce learnable mask tokens at the masked positions. These mask tokens are shared across all instances and serve as placeholders for reconstruction. The combined features, encompassing both visible features and mask tokens, are enhanced with positional embeddings before being processed by a transformer decoder. The decoder's output is then projected back to the original pixel space through a linear layer (omitted from Figure 1 for simplicity).
 
-For the reconstruction objective $\mathcal{L}_{\text{rec}}$, we utilize mean squared error (MSE) loss, to measure the difference between reconstructed and original image patches. Following common practice, this loss calculation is restricted to the masked regions:
+For the reconstruction objective $\mathcal{L}_{\text{rec}}$, we utilize Mean Squared Error (MSE) loss, to measure the difference between reconstructed and original image patches. Following common practice, this loss calculation is restricted to the masked regions:
 
 \begin{equation}
     \mathcal{L}_{\text{rec}} = \text{MSE}(\hat{\mathbf{x}}_m, \mathbf{x}_m)
@@ -58,7 +86,7 @@ where $\hat{\mathbf{x}}_m$ represents the reconstructed patches and $\mathbf{x}_
 The visible patch features $\mathbf{q}_v$ are additionally leveraged for classification. Diverging from traditional classification, where one input contains a single class, we assign visible patches to classes based on their spatial positions. The classification branch takes only the class tokens from the encoder to classify them. The total number of classes is the same as the number of visible patches which is calculated as:
 
 \begin{equation}
-    N_{\text{classes}} = \left(\frac{\text{img\_size}}{\text{patch\_size}}\right)^2 \cdot (1 - r_{\text{mask}})
+    N_{\text{classes}} = N \cdot (1 - r_{\text{mask}})
 \end{equation}
 
 Since we obtain several classes from a single image, the classification branch is a multi-class classification problem. The classification head consists of a simple linear layer that projects the patch features directly to the number of classes. The classification loss $\mathcal{L}_{\text{cls}}$ employs cross-entropy (CE) between predicted and ground truth labels:

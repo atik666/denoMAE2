@@ -53,7 +53,6 @@ Figure~\ref{fig:radio} illustrates the RadioML diagram, which is used to visuali
     \label{fig:cons}
 \end{figure*}
 
-
 \begin{table}[h]
     \centering
     \caption{List of classes in the RadioML diagram}
@@ -96,49 +95,3 @@ Figure~\ref{fig:radio} illustrates the RadioML diagram, which is used to visuali
     \label{fig:radio}
 \end{figure*}
 
-\begin{table}[h]
-    \centering
-    \caption{List of hyperparameters during pretraining}
-    \begin{tabular}{|c|c|}
-        \hline
-        \textbf{Parameter name} & \textbf{Value} \\ \hline
-        Training batch size & 64 \\ \hline
-        Testing batch size & 10 \\ \hline
-        Image size & 224, 224 \\ \hline
-        Patch size & 16 \\ \hline
-        Mask ratio & 0.75 \\ \hline
-        Encoder embedding dimension & 768 \\ \hline
-        Decoder embedding dimension & 512 \\ \hline
-        Encoder depth & 12 \\ \hline
-        Decoder depth & 8 \\ \hline
-        Encoder number of heads & 12 \\ \hline
-        Decoder number of heads & 8 \\ \hline
-        Number of epochs & 100 \\ \hline
-        Learning rate & 0.0003 \\ \hline
-        Weight decay & 0.05 \\ \hline
-        Classification loss weight & 0.1 \\ \hline
-        Reconstruction loss weight & 1.0 \\ \hline
-    \end{tabular}
-    \label{tab:pre_para}
-\end{table}
-
-\begin{table}[h]
-    \centering
-    \caption{List of hyperparameters during pretraining}
-    \begin{tabular}{|c|c|}
-        \hline
-        \textbf{Parameter name} & \textbf{Value} \\ \hline
-        Training batch size & 32 \\ \hline
-        Testing batch size & 10 \\ \hline
-        Image size & 224, 224 \\ \hline
-        Patch size & 16 \\ \hline
-        Encoder embedding dimension & 768 \\ \hline
-        Encoder depth & 12 \\ \hline
-        Encoder number of heads & 12 \\ \hline
-        Number of epochs & 150 \\ \hline
-        Learning rate & 0.0001 \\ \hline
-        Weight decay & 0.05 \\ \hline
-        Number of classes & 10, 24 \\ \hline
-    \end{tabular}
-    \label{tab:fine_para}
-\end{table}
