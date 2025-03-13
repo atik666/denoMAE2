@@ -19,8 +19,9 @@ This combined approach forces the model to learn robust feature representations 
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/username/DenoMAE_2.0.git
-cd DenoMAE_2.0/Clean/Final_final
+git clone https://github.com/atik666/denoMAE2/tree/model
+# Change into the project directory
+cd model
 
 # Install required packages
 pip install torch torchvision numpy scikit-learn matplotlib tqdm pillow tensorboard seaborn
