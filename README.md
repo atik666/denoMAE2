@@ -33,7 +33,7 @@ pip install torch torchvision numpy scikit-learn matplotlib tqdm pillow tensorbo
 To pretrain the DenoMAE 2.0 model:
 
 ```bash
-bash scripts/run_pretrain.sh
+bash ./run_pretrain.sh
 ```
 
 You can configure the pretraining parameters in the shell file before running.
@@ -48,7 +48,7 @@ Key parameters:
 To fine-tune the pretrained model for downstream classification tasks:
 
 ```bash
-bash scripts/run_finetune.sh
+bash ./run_finetune.sh
 ```
 
 Please modify the shell file to configure your fine-tuning parameters.
