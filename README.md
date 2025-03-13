@@ -17,15 +17,36 @@ The model employs a unique training strategy where:
 This combined approach forces the model to learn robust feature representations that are useful for both denoising and understanding image structure.
 
 ## Installation
+
+### Dependencies
+
+A full list of dependencies is provided in the `requirements.txt` file.
+
+### Setting Up the Environment
 ```bash
 # Clone the repository
 git clone https://github.com/atik666/denoMAE2/tree/model
 # Change into the project directory
 cd model
 
+# Option 1: Install directly with pip
+pip install -r requirements.txt
+
+# Option 2: Create and use a virtual environment (recommended)
+python -m venv denomae_env
+
+# On Windows
+denomae_env\Scripts\activate
+# On Linux/Mac
+source denomae_env/bin/activate
+
 # Install required packages
-pip install torch torchvision numpy scikit-learn matplotlib tqdm pillow tensorboard seaborn
+pip install -r requirements.txt
 ```
+
+For GPU acceleration (recommended for training):
+- Ensure you have compatible NVIDIA drivers installed
+- PyTorch will automatically use available CUDA if configured properly
 
 ## Usage
 

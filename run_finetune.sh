@@ -19,8 +19,6 @@ TEST_DATA_PATH="/mnt/d/archive/images_large/snr_20db/test/"
 PRETRAINED_MODEL_PATH="models/denoMAE2.pth"
 OUTPUT_MODEL_PATH="models/finetunedClassifier.pth"  # Added dB value to output filename
 
-# decoder_embed_dim 768, changed from 512
-
 # Run the Python script with the specified arguments
 python finetune.py \
     --train_data_path "$TRAIN_DATA_PATH" \
