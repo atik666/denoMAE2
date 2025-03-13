@@ -85,6 +85,3 @@ If you use DenoMAE 2.0 in your research, please cite:
       url={https://arxiv.org/abs/2502.18202}, 
 }
 ```
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
