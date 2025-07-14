@@ -86,13 +86,6 @@ P.~Khosla, P.~Teterwak, C.~Wang, A.~Sarna, Y.~Tian, P.~Isola, A.~Maschinot,
   in neural information processing systems}, vol.~33, pp. 18\,661--18\,673,
   2020.
 
-\bibitem{devlin2019bertpretrainingdeepbidirectional}
-\BIBentryALTinterwordspacing
-J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova, ``Bert: Pre-training of deep
-  bidirectional transformers for language understanding,'' 2019. [Online].
-  Available: \url{https://arxiv.org/abs/1810.04805}
-\BIBentrySTDinterwordspacing
-
 \bibitem{yin2024stablemask}
 Q.~Yin, X.~He, X.~Zhuang, Y.~Zhao, J.~Yao, X.~Shen, and Q.~Zhang, ``Stablemask:
   Refining causal masking in decoder-only transformer,'' \emph{arXiv preprint
@@ -104,12 +97,11 @@ A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai,
   ``An image is worth 16x16 words: Transformers for image recognition at
   scale,'' \emph{arXiv preprint arXiv:2010.11929}, 2020.
 
-\bibitem{he2021maskedautoencodersscalablevision}
-\BIBentryALTinterwordspacing
-K.~He, X.~Chen, S.~Xie, Y.~Li, P.~Dollár, and R.~Girshick, ``Masked
-  autoencoders are scalable vision learners,'' 2021. [Online]. Available:
-  \url{https://arxiv.org/abs/2111.06377}
-\BIBentrySTDinterwordspacing
+\bibitem{he2022masked}
+K.~He, X.~Chen, S.~Xie, Y.~Li, P.~Doll{\'a}r, and R.~Girshick, ``Masked
+  autoencoders are scalable vision learners,'' in \emph{Proceedings of the
+  IEEE/CVF conference on computer vision and pattern recognition}, 2022, pp.
+  16\,000--16\,009.
 
 \bibitem{yue2023understanding}
 X.~Yue, L.~Bai, M.~Wei, J.~Pang, X.~Liu, L.~Zhou, and W.~Ouyang,
@@ -178,6 +170,13 @@ D.~Berthelot, N.~Carlini, I.~Goodfellow, N.~Papernot, A.~Oliver, and C.~A.
   Raffel, ``Mixmatch: A holistic approach to semi-supervised learning,''
   \emph{Advances in neural information processing systems}, vol.~32, 2019.
 
+\bibitem{devlin2019bert}
+J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova, ``Bert: Pre-training of deep
+  bidirectional transformers for language understanding,'' in \emph{Proceedings
+  of the 2019 conference of the North American chapter of the association for
+  computational linguistics: human language technologies, volume 1 (long and
+  short papers)}, 2019, pp. 4171--4186.
+
 \bibitem{ma2024refined}
 M.~Ma, S.~Liu, S.~Wang, and S.~Shi, ``Refined semi-supervised modulation
   classification: Integrating consistency regularization and pseudo-labeling
@@ -234,6 +233,10 @@ V.~T. Kunde, V.~Rajagopalan, C.~S.~K. Valmeekam, K.~Narayanan, S.~Shakkottai,
   in-context estimators for wireless communications,'' \emph{arXiv preprint
   arXiv:2311.00226}, 2023.
 
+\bibitem{hendrycks2016gaussian}
+D.~Hendrycks and K.~Gimpel, ``Gaussian error linear units (gelus),''
+  \emph{arXiv preprint arXiv:1606.08415}, 2016.
+
 \bibitem{peng2018modulation}
 S.~Peng, H.~Jiang, H.~Wang, H.~Alwageed, Y.~Zhou, M.~M. Sebdani, and Y.-D. Yao,
   ``Modulation classification based on signal constellation diagrams and deep
@@ -243,6 +246,21 @@ S.~Peng, H.~Jiang, H.~Wang, H.~Alwageed, Y.~Zhou, M.~M. Sebdani, and Y.-D. Yao,
 \bibitem{van2008visualizing}
 L.~Van~der Maaten and G.~Hinton, ``Visualizing data using t-sne.''
   \emph{Journal of machine learning research}, vol.~9, no.~11, 2008.
+
+\bibitem{touvron2021training}
+H.~Touvron, M.~Cord, M.~Douze, F.~Massa, A.~Sablayrolles, and H.~J{\'e}gou,
+  ``Training data-efficient image transformers \& distillation through
+  attention,'' in \emph{International conference on machine learning}.\hskip
+  1em plus 0.5em minus 0.4em\relax PMLR, 2021, pp. 10\,347--10\,357.
+
+\bibitem{xie2021self}
+Z.~Xie, Y.~Lin, Z.~Yao, Z.~Zhang, Q.~Dai, Y.~Cao, and H.~Hu, ``Self-supervised
+  learning with swin transformers,'' \emph{arXiv preprint arXiv:2105.04553},
+  2021.
+
+\bibitem{bao2021beit}
+H.~Bao, L.~Dong, S.~Piao, and F.~Wei, ``Beit: Bert pre-training of image
+  transformers,'' \emph{arXiv preprint arXiv:2106.08254}, 2021.
 
 \bibitem{faysal2024nmformer}
 A.~Faysal, M.~Rostami, R.~G. Roshan, H.~Wang, and N.~Muralidhar, ``Nmformer: A
@@ -259,5 +277,35 @@ F.~Meng, P.~Chen, L.~Wu, and X.~Wang, ``Automatic modulation classification: A
 Y.~Sun and E.~A. Ball, ``Automatic modulation classification using techniques
   from image classification,'' \emph{IET Communications}, vol.~16, no.~11, pp.
   1303--1314, 2022.
+
+\bibitem{ccamlibel2024automatic}
+A.~{\c{C}}aml{\i}bel, B.~Karakaya, and Y.~H. Tan{\c{c}}, ``Automatic modulation
+  recognition with deep learning algorithms,'' in \emph{2024 32nd Signal
+  Processing and Communications Applications Conference (SIU)}.\hskip 1em plus
+  0.5em minus 0.4em\relax IEEE, 2024, pp. 1--4.
+
+\bibitem{elyousseph2021deep}
+H.~Elyousseph and M.~L. Altamimi, ``Deep learning radio frequency signal
+  classification with hybrid images,'' in \emph{2021 IEEE International
+  Conference on Signal and Image Processing Applications (ICSIPA)}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2021, pp. 7--11.
+
+\bibitem{cheng2024automatic}
+R.~Cheng, Q.~Chen, and M.~Huang, ``Automatic modulation recognition using deep
+  cvcnn-lstm architecture,'' \emph{Alexandria Engineering Journal}, vol. 104,
+  pp. 162--170, 2024.
+
+\bibitem{jagatheesaperumal2024deep}
+S.~K. Jagatheesaperumal, I.~Ahmad, M.~H{\"o}yhty{\"a}, S.~Khan, and A.~Gurtov,
+  ``Deep learning frameworks for cognitive radio networks: Review and open
+  research challenges,'' \emph{Journal of Network and Computer Applications},
+  p. 104051, 2024.
+
+\bibitem{10014805}
+S.~N. Syed, P.~I. Lazaridis, F.~A. Khan, Q.~Z. Ahmed, M.~Hafeez, V.~Holmes,
+  I.~P. Chochliouros, and Z.~D. Zaharis, ``Deep learning approaches for
+  spectrum sensing in cognitive radio networks,'' in \emph{2022 25th
+  International Symposium on Wireless Personal Multimedia Communications
+  (WPMC)}, 2022, pp. 480--485.
 
 \end{thebibliography}

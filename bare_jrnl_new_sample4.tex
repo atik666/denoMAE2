@@ -28,24 +28,23 @@
 \usepackage{algpseudocode}
 \usepackage{amsmath}
 % \hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
-
+\usepackage{hyperref}
 \usepackage[margin=1in]{geometry}
 \usepackage{listings}
 % Change 'Listing' to 'Algorithm'
 \renewcommand{\lstlistingname}{Algorithm}
 
-\usepackage{xcolor}
-
 \begin{document}
 
 \title{DenoMAE2.0: Improving Denoising Masked Autoencoders by Classifying Local Patches for Automatic Modulation Classification}
 
-\author{Atik Faysal,~\IEEEmembership{Student Member,~IEEE,}, 
-Mohammad Rostami,~\IEEEmembership{Student Member,~IEEE,}
-Taha Boushine,~\IEEEmembership{Student Member,~IEEE,},
-Reihaneh Gh. Roshan,~\IEEEmembership{Student Member,~IEEE,},
-Huaxia Wang,~\IEEEmembership{Member,~IEEE,}
-Nikhil Muralidhar,~\IEEEmembership{Member,~IEEE,}
+\author{Atik Faysal,~\IEEEmembership{Member,~IEEE}, 
+Mohammad Rostami,~\IEEEmembership{Student Member,~IEEE},
+Taha Boushine,~\IEEEmembership{Student Member,~IEEE},
+Reihaneh Gh. Roshan,~\IEEEmembership{Student Member,~IEEE},
+Huaxia Wang,~\IEEEmembership{Member,~IEEE},
+Nikhil Muralidhar,~\IEEEmembership{Member,~IEEE},
+Yu-Dong Yao,~\IEEEmembership{Fellow,~IEEE}
 }
 
 % The paper headers
@@ -59,7 +58,10 @@ Nikhil Muralidhar,~\IEEEmembership{Member,~IEEE,}
 
 \begin{abstract}
 
-We introduce DenoMAE2.0, an enhanced denoising masked autoencoder that integrates a local patch classification objective alongside traditional reconstruction loss to improve representation learning and robustness. Unlike conventional Masked Autoencoders (MAE), which focus solely on reconstructing missing inputs, DenoMAE2.0 introduces position-aware classification of unmasked patches, enabling the model to capture fine-grained local features while maintaining global coherence. This dual-objective approach is particularly beneficial in semi-supervised learning for wireless communication, where high noise levels and data scarcity pose significant challenges. We conduct extensive experiments on modulation signal classification across a wide range of Signal-to-Noise Ratios (SNRs), from extremely low to moderately high conditions and in a low data regime. Our results demonstrate that DenoMAE2.0 surpasses its predecessor, DenoMAE, and other baselines in both denoising quality and downstream classification accuracy. DenoMAE2.0 achieves a 1.1\% improvement over DenoMAE on our dataset and 11.83\%, 16.55\% significant improved accuracy gains on the RadioML benchmark, over DenoMAE, for constellation diagram classification of modulation signals. 
+% We introduce DenoMAE2.0, an enhanced denoising masked autoencoder that integrates a local patch classification objective alongside traditional reconstruction loss to improve representation learning and robustness. Unlike conventional Masked Autoencoders (MAE), which focus solely on reconstructing missing inputs, DenoMAE2.0 introduces position-aware classification of unmasked patches, enabling the model to capture fine-grained local features while maintaining global coherence. This dual-objective approach is particularly beneficial in semi-supervised learning for wireless communication, where high noise levels and data scarcity pose significant challenges. We conduct extensive experiments on modulation signal classification across a wide range of Signal-to-Noise Ratios (SNRs), from extremely low to moderately high conditions and in a low data regime. Our results demonstrate that DenoMAE2.0 surpasses its predecessor, DenoMAE, and other baselines in both denoising quality and downstream classification accuracy. DenoMAE2.0 achieves a 1.1\% improvement over DenoMAE on our dataset and 11.83\%, 16.55\% significant improved accuracy gains on the RadioML benchmark, over DenoMAE, for constellation diagram classification of modulation signals. 
+
+We introduce DenoMAE2.0, an enhanced denoising masked autoencoder designed to significantly improve representation learning for automatic modulation classification (AMC) in wireless communications. Unlike standard Masked Autoencoders (MAEs), which solely reconstruct masked inputs, DenoMAE2.0 jointly performs denoising and reconstruction by incorporating a position-aware local patch classification objective. This approach enables the model to simultaneously denoise corrupted signals and accurately reconstruct missing information, effectively capturing both global context and local structural patterns crucial for modulation classification under noisy and data-scarce scenarios. Extensive experiments demonstrate that DenoMAE2.0 achieves superior denoising and classification performance, outperforming baseline methods and its predecessor, DenoMAE, particularly under extremely low signal-to-noise (SNR) ratios (down to -7 dB), where other approaches significantly degrade. Our method achieves state-of-the-art accuracy of 82.4\%, improving upon the original DenoMAE by 1.1\%, while consistently enhancing reconstruction quality across all modulation classes. Additionally, DenoMAE2.0 exhibits robust transfer learning capabilities, achieving consistent improved accuracy over a vision transformer (ViT) at different SNRs with a 6.13\% highest gain at noise-signal equilibrium point. These results highlight the effectiveness of our dual-objective, self-supervised framework for robust AMC in challenging wireless communication environments.
+
 
 \end{abstract}
 

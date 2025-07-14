@@ -15,7 +15,7 @@ During the pretraining phase, DenoMAE2.0 learns to denoise and reconstruct missi
 
 Table \ref{tab:ssim_psnr_comparison} quantifies these improvements using two standard image quality metrics: structural similarity index (SSIM) and peak signal-to-noise ratio (PSNR). We report the mean SSIM and PSNR scores across all validation images (ten images per class) during pretraining. The results demonstrate that DenoMAE2.0 consistently outperforms the original DenoMAE across all modulation classes. For SSIM, DenoMAE2.0 shows improvements ranging from minor enhancements (0.0004 increase for DQPSK) to substantial gains (0.0315 increase for 4PAM). Similarly, for PSNR, DenoMAE2.0 achieves consistent improvements across all classes, with particularly notable enhancements for GMSK (0.2793 dB increase) and OOK (0.2911 dB increase). These consistent improvements in reconstruction quality metrics directly contribute to the enhanced downstream classification performance of DenoMAE2.0.
 
-\begin{table*}[htbp]
+\begin{table*}[!htbp]
     \centering
     \caption{Quantitative Comparison of Denoising Performance between DenoMAE and DenoMAE2.0.}
     \label{tab:ssim_psnr_comparison}
@@ -78,13 +78,13 @@ After pretraining, we transfer the learned representations to the downstream cla
     \begin{tabular}{cc}
         \hline
         \textbf{Method} & \textbf{Test accuracy (\%)} \\ \hline
-        ViT & 79.90 \\ 
-        DEiT & 81.20 \\ 
-        MoCov3 & 81.00 \\ 
-        BEiT & 80.40 \\
-        MAE &  80.10 \\ 
-        DenoMAE &  81.30 \\
-        DenoMAE2.0 &  \textbf{82.40} \\ \hline
+        ViT \cite{dosovitskiy2020image} & 79.90 \\ 
+        DEiT \cite{touvron2021training} & 81.20 \\ 
+        MoCov3 \cite{xie2021self} & 81.00 \\ 
+        BEiT \cite{bao2021beit} & 80.40 \\
+        MAE \cite{he2022masked} &  80.10 \\ 
+        DenoMAE \cite{faysal2025denomae} &  81.30 \\
+        DenoMAE2.0  (\textbf{Ours}) &  \textbf{82.40} \\ \hline
     \end{tabular}
     \label{tab:example}
 \end{table}
@@ -115,7 +115,7 @@ Additionally, both models struggle with differentiating between CPFSK and GFSK, 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{images/finetune_epoch.png}
-    \caption{Epoch finetuning.}
+    \caption{Finetuning performance improvement for  different epochs}
     \label{fig:epoch}
 \end{figure}
 
@@ -140,20 +140,73 @@ Table~\ref{tab:compare} presents a comprehensive comparison between DenoMAE2.0 a
     \centering
     \caption{Comparison of DenoMAE2.0 with other modulation classification methods}
     \label{tab:compare}
-    \begin{tabular}{cccccc}
+    \begin{tabular}{lccccccc}
     \toprule
-    \multirow{2}{*}{\textbf{Methods}} & \multicolumn{2}{c}{\textbf{Number of samples}} & \multirow{2}{*}{\textbf{SNR dB}} & \multirow{2}{*}{\textbf{Number of classes}} & \multirow{2}{*}{\textbf{Test accuracy (\%)}} \\ 
+    \multirow{2}{*}{\textbf{Methods}} & \multicolumn{2}{c}{\textbf{Number of samples}} & 
+    \multirow{2}{*}{\textbf{SNR dB}} & \multirow{2}{*}{\textbf{Number of}} 
+    & \multirow{2}{*}{\textbf{Finetuning}} & \multirow{2}{*}{\textbf{Inference time}} 
+    & \multirow{2}{*}{\textbf{Test accuracy}} \\ 
     \cmidrule(lr){2-3}
-     & \textbf{Pretraining} & \textbf{Fine-tuning} & & \\ \midrule
+     & \textbf{Pretraining} & \textbf{Fine-tuning} & & \textbf{classes} & \textbf{parameters} 
+     & \textbf{(ms)} & \textbf{(\%)} \\ \midrule
     
-    AlexNet \cite{peng2018modulation}  & 800,000 (train) & 8,000 (test)  & 2 & 8 & 82.8  \\
-    NMformer \cite{faysal2024nmformer} & 106,800 & 3,000 & 0.5 - 4.5 & 10 & 71.6 \\
-    CNN-AMC \cite{meng2018automatic} & 79,200 & 228,060 & -6 & 4 & 50.40 \\
-    DL-GRF \cite{sun2022automatic} &  2,000 (train) & 200 (test) & 0 & 4 & 59 \\
-    DenoMAE \cite{faysal2025denomae} & 10,000 & 1,000 & 0 - 10 & 10 & 81.3 \\
-    DenoMAE2.0 (\textbf{Ours}) & 10,000 & 1,000 & 0 - 10 & 10 & 82.4 \\
+    AlexNet \cite{peng2018modulation}  & 800,000 (train) & 8,000 (test)  & 2 & 8 & 22.5M & 2.0 & 82.8  \\
+    NMformer \cite{faysal2024nmformer} & 106,800 & 3,000 & 0.5 - 4.5 & 10 & 85.8M & 14.5 & 71.6 \\
+    CNN-AMC \cite{meng2018automatic} & 79,200 & 228,060 & -6 & 4 & 1.6M & 0.13 & 50.40 \\
+    DL-GRF \cite{sun2022automatic} &  2,000 (train) & 200 (test) & 0 & 4 & 23.5M & 10 & 59 \\
+    DenoMAE \cite{faysal2025denomae} & 10,000 & 1,000 & 0 - 10 & 10 & 85.8M & 14.5  & 81.3 \\
+    DenoMAE2.0 (\textbf{Ours}) & 10,000 & 1,000 & 0 - 10 & 10 &  85.8M  & 14.5  & 82.4 \\
     
     \bottomrule
     \end{tabular}
 \end{table*}
+
+
+\section{Transferability}
+
+To show the transferability of DenoMAE2.0 on other similar task, we performed experiments on a similar benchmark dataset named RadioML. A brief description on the RadioML dataset is provided in the following subsection.
+
+\subsection{RadioML Dataset}
+
+We use a subset of the RadioML 2018.01A dataset~\cite{o2018over}, which is widely used as a benchmark in wireless communication~\cite{ccamlibel2024automatic} and spectrum sensing research~\cite{elyousseph2021deep}, facilitates advancements in deep learning-based modulation recognition, interference mitigation, and cognitive radio applications~\cite{cheng2024automatic, jagatheesaperumal2024deep, 10014805}. The dataset consists of I/Q (in-phase and quadrature) signal samples, each with shape $1024 \times 2$. To evaluate performance across a comprehensive range of signal conditions, we selected five strategically chosen SNR levels: -20 dB, -10 dB, 0 dB, 10 dB, and 20 dB. This selection enables both interpolation analysis (at 0 dB and 10 dB, within DenoMAE2.0's pretraining range) and extrapolation assessment (at -20 dB, -10 dB, and 20 dB), providing insights into the model's generalization capabilities beyond its training distribution. For each modulation-SNR combination, we utilized 4,000 training samples, 46 validation samples, and 50 testing samples, balancing statistical significance with computational efficiency. In our study, we focus on the normal modulation types of RadioML dataset which consists of 11 classes as listed in Table~\ref{tab:radioml_classes_compact}.
+
+\begin{table}[h]
+    \centering
+    \caption{Modulation classes in the RadioML}
+    \small
+    \begin{tabular}{p{5cm}l}
+        \hline
+        \textbf{Class Name} & \textbf{Abbreviation} \\ \hline
+        4-level Amplitude Shift Keying & 4ASK \\ 
+        8-phase Phase Shift Keying & 8PSK \\ 
+        16-point Quadrature Amplitude Modulation & 16QAM \\ 
+        Amplitude Modulation, Double Sideband Suppressed Carrier & AM-DSB-SC \\ 
+        Amplitude Modulation, Single Sideband Suppressed Carrier & AM-SSB-SC \\ 
+        Binary Phase Shift Keying & BPSK \\ 
+        Frequency Modulation & FM \\ 
+        Gaussian Frequency Shift Keying & GFSK \\ 
+        Offset Quadrature Phase Shift Keying & OQPSK \\ 
+        On-Off Keying & OOK \\ 
+        Quadrature Phase Shift Keying & QPSK \\ \hline
+    \end{tabular}
+    \label{tab:radioml_classes_compact}
+\end{table}
+
+\subsection{Performance}
+
+To evaluate transferability, we applied our models pretrained on the original dataset to the RadioML benchmark through fine-tuning. This process tests whether the representations learned during pretraining generalize effectively to new signal distributions and classification tasks. Figure~\ref{fig:trans} illustrates classification accuracy across multiple SNR levels, demonstrating how transfer learning performance scales with signal quality.
+
+At extremely low SNRs (-20 dB), all three methods converge to the same baseline performance (9.09\%), indicating they reach a fundamental classification limit where signal features become indistinguishable from noise. This represents random guessing for an 11-class problem, suggesting that no model can extract meaningful patterns at this noise level. At moderately low SNR (-10 dB), DenoMAE2.0 begins to demonstrate its superior noise robustness by achieving 10.12\% accuracy while both DenoMAE and ViT remain at baseline performance. This small but notable improvement (1.03 percentage points) represents the earliest evidence of DenoMAE2.0's enhanced feature extraction capabilities in highly degraded signals.
+
+The most performance differentiation occurs at 0 dB SNR, where DenoMAE2.0 achieves 39.53\% accuracy, outperforming DenoMAE by 3.2 percentage points and ViT by 6.13 percentage points. This substantial gap at the noise-signal equilibrium point highlights DenoMAE2.0's effectiveness precisely where denoising capabilities matter most. In favorable SNR conditions (10-20 dB), all models achieve high accuracy (\textgreater 90\%), with DenoMAE2.0 maintaining its lead but with narrowing margins. The relative improvements become more modest (approximately 1 percentage point at 10 dB and 0.79 percentage points at 20 dB compared to DenoMAE), suggesting that when signals are cleaner, sophisticated denoising techniques offer diminishing returns.
+
+The consistent hierarchy of performance (DenoMAE2.0 \textgreater DenoMAE \textgreater ViT) across the entire operational SNR range confirms that the architectural enhancements in DenoMAE2.0 provide systematic benefits for signal classification. Most importantly, the performance advantage is proportionally largest when signal quality is poor, precisely the condition where robust performance is most valuable in practical applications.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{images/radioML.png}
+    \caption{Transfer learning performance on RadioML dataset}
+    \label{fig:trans}
+\end{figure}
+
 
